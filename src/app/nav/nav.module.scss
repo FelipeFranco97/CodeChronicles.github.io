@@ -1,0 +1,18 @@
+@import '../../colors.scss';
+
+.nav_menu {
+  margin: 2vh 5vw;
+  position: relative;
+  z-index: 1000;
+
+  .h1_web_title {
+    font-weight: 700;
+    font-size: calc(0.5vw + 1em);
+    text-decoration: none;
+    color: $color-lightest;
+  }
+}
+
+.hr {
+  margin: 0 5vw;
+}

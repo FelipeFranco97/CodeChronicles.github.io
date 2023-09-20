@@ -1,10 +1,12 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from './page.module.scss'
 
 export default function Home() {
   return (
     <>
-      <h1>Hello World</h1>
+      <section>
+        <h1 className={styles.h1_title}>¿Qué ruta elegirás hoy?</h1>
+        <article className={styles.article_container_images}></article>
+      </section>
     </>
   )
 }

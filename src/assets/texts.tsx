@@ -3,6 +3,7 @@ import { HeroBannerIntroduction } from '@/types/introduction/hero-banner.type'
 import { MiddleText } from '@/types/introduction/middle-text.type'
 import { Information } from '@/types/introduction/information.type'
 import { Nav } from '@/types/introduction/nav.type'
+import Banner from '@/docs/assets/introduction_banner.jpg'
 
 export const header: Header = {
   titulo: 'CodeChronicles',
@@ -10,7 +11,7 @@ export const header: Header = {
 
 export const heroBannerIntroduccion: HeroBannerIntroduction = {
   titulo: 'Introducción',
-  url: 'src/assets/img/introduction_banner.jpg',
+  url: '/introduction_banner.JPG',
   credits: (
     <>
       Photo by{' '}

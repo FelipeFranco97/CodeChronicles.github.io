@@ -10,7 +10,7 @@ export const header: Header = {
 
 export const heroBannerIntroduccion: HeroBannerIntroduction = {
   titulo: 'Introducción',
-  url: 'public/introduction_banner.jpg',
+  url: './public/introduction_banner.jpg',
   credits: (
     <>
       Photo by{' '}

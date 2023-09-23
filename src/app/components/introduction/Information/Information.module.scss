@@ -1,0 +1,61 @@
+@import '../../../../colors.scss';
+
+.section_main {
+  display: flex;
+  color: $color-lightest;
+  margin-bottom: 10vh;
+
+  // .nav_sections {
+  //   margin: 10vh 0;
+  //   line-height: 250%;
+
+  //   .ul {
+  //     margin: 0 3vw;
+  //     list-style: none;
+
+  //     .li {
+  //       font-size: calc(0.5vw + 0.5em);
+
+  //       .link_sections {
+  //         color: $color-lightest;
+  //       }
+
+  //       &.active {
+  //         font-weight: bold;
+  //       }
+  //     }
+  //   }
+  // }
+
+  .hr_separator {
+    margin: 10vh 0 10vh 20vw;
+    display: flex;
+  }
+
+  .section_info {
+    margin: 0 5vw;
+
+    .article_main {
+      line-height: 200%;
+      margin-bottom: 10vh;
+
+      .h1_title {
+        margin: 10vh 0;
+        font-size: calc(1vw + 1em);
+      }
+
+      .h2_subtitle {
+        margin: 7vh 0;
+        font-size: calc(0.6vw + 1em);
+      }
+
+      .p {
+        font-size: calc(0.2vw + 1em);
+      }
+    }
+  }
+
+  .div_container {
+    width: 25vw;
+  }
+}

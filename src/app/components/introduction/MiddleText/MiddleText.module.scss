@@ -1,0 +1,22 @@
+@import '../../../../colors.scss';
+
+.section_midtext {
+  color: $color-lightest;
+  width: 55vw;
+  margin: 10vh auto;
+
+  .article_midtext {
+    display: flex;
+    flex-direction: column;
+    line-height: 200%;
+
+    .h1_midtext {
+      font-size: calc(1vw + 1em);
+      padding-bottom: 5vh;
+    }
+
+    .p_midtext {
+      font-size: calc(0.2vw + 1em);
+    }
+  }
+}

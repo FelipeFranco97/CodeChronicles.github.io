@@ -12,6 +12,7 @@ const MiddleText = (props: MiddleText) => {
           <p className={styles.p_midtext}>{props.texto}</p>
         </article>
       </section>
+      <hr className={styles.hr} />
     </>
   )
 }

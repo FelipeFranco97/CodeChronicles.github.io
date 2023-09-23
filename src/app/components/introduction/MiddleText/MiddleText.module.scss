@@ -20,3 +20,19 @@
     }
   }
 }
+
+.hr {
+  display: none;
+}
+
+@media (orientation: portrait) {
+  .section_midtext {
+    width: inherit;
+    margin: 10vh 5vw;
+  }
+
+  .hr {
+    display: block;
+    margin: 0 5vw; 
+  }
+}

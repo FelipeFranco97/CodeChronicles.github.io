@@ -58,4 +58,10 @@
   .div_container {
     width: 25vw;
   }
+  @media (orientation: portrait) {
+    .hr_separator,
+    .div_container {
+      display: none;
+    }
+  }
 }

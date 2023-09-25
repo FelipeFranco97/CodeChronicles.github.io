@@ -1,5 +1,6 @@
 export interface HeroBannerIntroduction {
     titulo: string,
-    url: string,
+    urlLocal: string,
+    urlServer: string,
     credits: JSX.Element,
 }

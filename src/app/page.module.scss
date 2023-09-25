@@ -1,6 +1,7 @@
 @import '../colors.scss';
 
-.h1_title {
+.section_main {
+  .h1_title {
     display: flex;
     justify-content: center;
     font-weight: 700;
@@ -8,3 +9,65 @@
     color: #d3d4d6;
     padding-top: 5%;
   }
+
+  .section_routes {
+    position: relative;
+    height: 100%;
+    margin: 2vh 5vw;
+
+    .article_hr_container {
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
+      height: 100%;
+      display: flex;
+      z-index: -1;
+    }
+
+    .article_main {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .article_route {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .div_empty {
+          flex: 1;
+          width: 10px;
+          height: 10px;
+          background-color: #d3d4d6;
+        }
+
+        .div_circle {
+          flex: 1;
+          border: 1px solid #d3d4d6;
+          background-color: $color-darkest;
+          width: 3vw;
+          height: 3vw;
+          border-radius: 50%;
+          margin: 0 20px;
+
+          // &:not(:first-child) {
+          //   margin-top: 10vw;
+          // }
+        }
+
+        .article_p_container {
+          flex: 1;
+
+          .p_title {
+            padding: 1vw;
+            width: 50%;
+            border: 1px solid #d3d4d6;
+            color: #d3d4d6;
+          }
+        }
+      }
+    }
+  }
+}

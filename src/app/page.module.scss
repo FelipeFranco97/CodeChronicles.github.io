@@ -38,9 +38,6 @@
 
         .div_empty {
           flex: 1;
-          width: 10px;
-          height: 10px;
-          background-color: #d3d4d6;
         }
 
         .div_circle {
@@ -51,21 +48,42 @@
           height: 3vw;
           border-radius: 50%;
           margin: 0 20px;
+          transition: background-color ease-out .5s;
 
+          &:hover {
+            cursor: pointer;
+            background-color: $color-lightest;
+          }
           // &:not(:first-child) {
           //   margin-top: 10vw;
           // }
         }
 
-        .article_p_container {
+        .article_p_main {
+          position: relative;
           flex: 1;
 
-          .p_title {
-            padding: 1vw;
-            width: 50%;
-            border: 1px solid #d3d4d6;
-            color: #d3d4d6;
+          &.visible {
+            opacity: 1;
+            transition: opacity 0.5s ease, max-height 0.5s ease;
           }
+
+          &.hidden {
+            opacity: 0;
+            overflow: hidden;
+            transition: opacity 0.5s ease, max-height 0.5s ease;
+          }
+
+          .article_p_container{
+
+            border-radius: 20px;
+            padding: 1vw;
+            width: 40%;
+            border: 1px solid;
+            color: $color-darkest;
+            background-color: $color-lightest;
+          
+          }     
         }
       }
     }

@@ -2,7 +2,6 @@ import { Header } from '@/types/header.type'
 import { HeroBannerIntroduction } from '@/types/introduction/hero-banner.type'
 import { MiddleText } from '@/types/introduction/middle-text.type'
 import { Information } from '@/types/introduction/information.type'
-import { Nav } from '@/types/introduction/nav.type'
 
 export const header: Header = {
   titulo: 'CodeChronicles',
@@ -39,18 +38,6 @@ export const middleText: MiddleText = {
   titulo: '¡Hola Programador!',
   texto:
     'Este es el inicio de una guía que empecé como un proyecto para mi mismo, en el que quiero escribir y documentar todo lo que he aprendido a través de mis años como ingeniero. Está guía está enfocada en el desarrollo web y tocaré desde los temas más básicos hasta conceptos un poco más avanzados. Tal vez esta guía le llegue a alguien que esté aprendiendo o que quiera reforzar sus conocimientos, sea quien sea espero que lo disfrute y aprenda.',
-}
-
-export const nav: Nav = {
-  titulo: 'Desarrollo Web',
-  subtitulo: [
-    {
-      titulo: 'La Web',
-    },
-    {
-      titulo: 'Internet',
-    },
-  ],
 }
 
 export const information: Information[] = [

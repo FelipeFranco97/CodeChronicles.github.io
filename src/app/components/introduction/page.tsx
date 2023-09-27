@@ -9,7 +9,7 @@ const Introduction = () => {
 
   return (
     <>
-      <HeroBanner {...heroBannerIntroduccion} />
+      <HeroBanner {...heroBannerIntroduccion}/>
       <MiddleText {...middleText}/>
       <Information information={information}/>
     </>

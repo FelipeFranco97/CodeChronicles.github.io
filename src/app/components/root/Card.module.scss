@@ -1,0 +1,71 @@
+@import '../../../colors.scss';
+
+.section_main {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  margin: 1vw auto;
+  gap: 3rem;
+  color: $color-lightest;
+
+  .link {
+    position: relative;
+    padding: 2vw;
+    margin: 1vw auto;
+    width: 20rem;
+    border: 1px solid $color-normal;
+    color: $color-lightest;
+
+    .h3_tag {
+      background-color: $color-lightest;
+      color: $color-darkest;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      margin: 0;
+      padding: .2vw;
+      font-size: calc(.5vw + .7em);
+    }
+
+    .h2_title {
+      margin: 3vw 0;
+      font-size: calc(.5vw + 1em);
+    }
+
+    .p_information {
+      line-height: 150%;
+      font-size: calc(.5vw + .5em);
+    }
+
+   
+  }
+
+  @media (orientation: portrait) {
+    .link {
+      width: 40vw;
+    }
+  }
+}
+
+@media (max-width: 917px) {
+  .section_main {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 602px) {
+  .section_main {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 430px) {
+  .section_main {
+    .link {
+      .h2_title{
+        margin: 7vw 0;
+      }
+    }
+  }
+}
+

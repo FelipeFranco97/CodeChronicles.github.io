@@ -1,4 +1,4 @@
-export interface HeroBannerIntroduction {
+export interface HeroBanner {
     titulo: string,
     urlLocal: string,
     urlServer: string,

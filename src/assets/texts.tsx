@@ -1,5 +1,6 @@
 import { Header } from '@/types/header.type'
-import { HeroBannerIntroduction } from '@/types/introduction/hero-banner.type'
+import { Root } from '@/types/root.type'
+import { HeroBanner } from '@/types/introduction/hero-banner.type'
 import { MiddleText } from '@/types/introduction/middle-text.type'
 import { Information } from '@/types/introduction/information.type'
 
@@ -7,7 +8,51 @@ export const header: Header = {
   titulo: 'CodeChronicles',
 }
 
-export const heroBannerIntroduccion: HeroBannerIntroduction = {
+export const root: Root[] = [
+ {
+  tag: 'CodeChronicles',
+  titulo: 'Introducción',
+  contenido: 'Información básica: la web, Internet, protocolos y más.',
+  url:'/components/introduction'
+ },
+ {
+  tag: 'CodeChronicles',
+  titulo: 'Herramientas',
+  contenido: 'Próximamente',
+  url:'/'
+ },
+ {
+  tag: 'CodeChronicles',
+  titulo: 'Control de Versiones',
+  contenido: 'Próximamente',
+  url:'/'
+ },
+ {
+  tag: 'CodeChronicles',
+  titulo: 'Front-End',
+  contenido: 'Próximamente',
+  url:'/'
+ },
+ {
+  tag: 'CodeChronicles',
+  titulo: 'Backend',
+  contenido: 'Próximamente',
+  url:'/'
+ }
+]
+
+export const heroBannerRoot: HeroBanner = {
+  titulo: '¡Bienvenido!',
+  urlServer: '',
+  urlLocal: '',
+  credits: (
+    <>
+    </>
+  )
+}
+  
+
+export const heroBannerIntroduccion: HeroBanner = {
 
   titulo: 'Introducción',
   urlServer: '/CodeChronicles.github.io/introductionbanner.jpg',

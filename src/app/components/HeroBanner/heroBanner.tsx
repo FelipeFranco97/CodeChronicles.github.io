@@ -2,7 +2,7 @@
 
 import { Img } from 'react-image'
 import styles from './heroBanner.module.scss'
-import { HeroBanner } from '@/types/introduction/hero-banner.type'
+import { HeroBanner } from '@/types/hero-banner.type'
 
 const HeroBanner = (props: HeroBanner) => {
   return (

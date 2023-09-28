@@ -1,5 +1,5 @@
 import styles from './Information.module.scss'
-import { Information } from '@/types/introduction/information.type'
+import { Information } from '@/types/information.type'
 
 interface InformationProps {
   information: Information[]
@@ -15,7 +15,7 @@ const Information = (props: InformationProps) => {
           {props.information.map((info, index) =>
             info.subtitulo ? (
               <article className={styles.article_main} key={index}>
-                <h2 className={styles.h2_subtitle}>{info.titulo}</h2>
+                <h3 className={styles.h2_subtitle}>{info.titulo}</h3>
                 <p className={styles.p}>{info.paragraph}</p>
               </article>
             ) : (

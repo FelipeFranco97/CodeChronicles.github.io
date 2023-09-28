@@ -1,59 +1,54 @@
 import { Header } from '@/types/header.type'
 import { Root } from '@/types/root.type'
-import { HeroBanner } from '@/types/introduction/hero-banner.type'
-import { MiddleText } from '@/types/introduction/middle-text.type'
-import { Information } from '@/types/introduction/information.type'
+import { HeroBanner } from '@/types/hero-banner.type'
+import { MiddleText } from '@/types/middle-text.type'
+import { Information } from '@/types/information.type'
 
 export const header: Header = {
   titulo: 'CodeChronicles',
 }
 
 export const root: Root[] = [
- {
-  tag: 'CodeChronicles',
-  titulo: 'Introducción',
-  contenido: 'Información básica: la web, Internet, protocolos y más.',
-  url:'/components/introduction'
- },
- {
-  tag: 'CodeChronicles',
-  titulo: 'Herramientas',
-  contenido: 'Próximamente',
-  url:'/'
- },
- {
-  tag: 'CodeChronicles',
-  titulo: 'Control de Versiones',
-  contenido: 'Próximamente',
-  url:'/'
- },
- {
-  tag: 'CodeChronicles',
-  titulo: 'Front-End',
-  contenido: 'Próximamente',
-  url:'/'
- },
- {
-  tag: 'CodeChronicles',
-  titulo: 'Backend',
-  contenido: 'Próximamente',
-  url:'/'
- }
+  {
+    tag: 'CodeChronicles',
+    titulo: 'Introducción',
+    contenido: 'Información básica: la web, Internet, protocolos y más.',
+    url: '/introduction',
+  },
+  {
+    tag: 'CodeChronicles',
+    titulo: 'Herramientas',
+    contenido: 'Próximamente',
+    url: '/tools',
+  },
+  {
+    tag: 'CodeChronicles',
+    titulo: 'Control de Versiones',
+    contenido: 'Próximamente',
+    url: '/',
+  },
+  {
+    tag: 'CodeChronicles',
+    titulo: 'Front-End',
+    contenido: 'Próximamente',
+    url: '/',
+  },
+  {
+    tag: 'CodeChronicles',
+    titulo: 'Backend',
+    contenido: 'Próximamente',
+    url: '/',
+  },
 ]
 
 export const heroBannerRoot: HeroBanner = {
   titulo: '¡Bienvenido!',
   urlServer: '',
   urlLocal: '',
-  credits: (
-    <>
-    </>
-  )
+  credits: <></>,
 }
-  
 
 export const heroBannerIntroduccion: HeroBanner = {
-
   titulo: 'Introducción',
   urlServer: '/CodeChronicles.github.io/introductionbanner.jpg',
   urlLocal: '/introductionbanner.jpg',
@@ -79,13 +74,39 @@ export const heroBannerIntroduccion: HeroBanner = {
   ),
 }
 
+export const heroBannerTools: HeroBanner = {
+  titulo: 'Herramientas',
+  urlServer: '/CodeChronicles.github.io/toolbanner.jpg',
+  urlLocal: '/toolbanner.jpg',
+  credits: (
+    <>
+      Photo by{' '}
+      <a
+        href='https://unsplash.com/@pankajpatel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
+        target='_blank'
+        style={{ textDecoration: 'none', color: '#D3D4D6' }}
+      >
+        Pankaj Patel
+      </a>{' '}
+      on{' '}
+      <a
+        href='https://unsplash.com/photos/u2Ru4QBXA5Q?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
+        target='_blank'
+        style={{ textDecoration: 'none', color: '#D3D4D6' }}
+      >
+        Unsplash
+      </a>
+    </>
+  ),
+}
+
 export const middleText: MiddleText = {
   titulo: '¡Hola Programador!',
   texto:
     'Este es el inicio de una guía que empecé como un proyecto para mi mismo, en el que quiero escribir y documentar todo lo que he aprendido a través de mis años como ingeniero. Está guía está enfocada en el desarrollo web y tocaré desde los temas más básicos hasta conceptos un poco más avanzados. Tal vez esta guía le llegue a alguien que esté aprendiendo o que quiera reforzar sus conocimientos, sea quien sea espero que lo disfrute y aprenda.',
 }
 
-export const information: Information[] = [
+export const informationIntroduction: Information[] = [
   {
     titulo: 'Desarrollo Web',
     paragraph: (
@@ -146,6 +167,153 @@ export const information: Information[] = [
         último podemos hablar sobre los <strong>Hipervinculos</strong> (o
         enlaces) que nos sirven como puentes entre las diferentes páginas web
         existentes.
+      </>
+    ),
+    subtitulo: true,
+  },
+]
+
+export const informationTools: Information[] = [
+  {
+    titulo: '¿Dónde escribo mi código?',
+    paragraph: (
+      <>
+        Las herramientas de escritura de código cobran un papel fundamental en
+        la vida de cada programador, cada quien lo personaliza a su gusto y lo
+        ajusta hasta sentirse cómodo con él.
+        <br />
+        <br />
+        Quisiera empezar por describir las herramientas más básicas y que
+        normalmente no se usan en un ámbito profesional, pero que es bueno
+        resaltar.
+      </>
+    ),
+    subtitulo: false,
+  },
+  {
+    titulo: 'Editores de texto',
+    paragraph: (
+      <>
+        Los editores de texto son programas diseñados para crear, editar y
+        manipular archivos de texto que generalmente son de texto plano (.txt).
+        Se utilizan para tareas generales de edición de texto y no incluyen
+        caraceterísitcas avanzadas de desarrollo web.
+        <br />
+        <br />
+        En Windows encontramos al <strong>Bloc de notas</strong> como editor
+        básico de texto que no nos proporciona funcionalidades avanzadas, su
+        equivalente en macOS <strong>TextEdit</strong> funciona de la misma
+        forma, al igual que <strong>Nano</strong> en sistemas Unix y Linux.
+        <br />
+        Me gustaría dar mención a otros dos editores de texto, que aunque no
+        tengan tantas funcionalidades y puedan funcionar igualmente como editor
+        de texto plano y que su uso ha ido disminuyendo a través de los años, se
+        han hecho con un pedazo en la historia de la programación,
+        <strong>
+          {' '}
+          <a
+            style={{ color: '#D3D4D6' }}
+            href='https://www.vim.org'
+            target='_blank'
+          >
+            Vim
+          </a>
+        </strong>{' '}
+        y{' '}
+        <strong>
+          <a
+            style={{ color: '#D3D4D6' }}
+            href='https://www.gnu.org/software/emacs/'
+            target='_blank'
+          >
+            Emacs
+          </a>{' '}
+        </strong>
+        que aunque se pueda usar en distintos sistemas operativos, forma parte
+        del proyecto GNU, un sistema operativo basado en Unix.
+      </>
+    ),
+    subtitulo: true,
+  },
+  {
+    titulo: 'Editores de Código',
+    paragraph: (
+      <>
+        Los editores de código, a diferencia de los editores de texto, son
+        programas diseñados especificamente para la escritura, edición y gestión
+        de código en distintos lenguajes de programación. Estos editores traen
+        por defecto caraceterísticas avanzadas y herramientas para
+        desarrolladores tales como el resaltado de sintaxis, el autocompletado
+        de código y una amplia variedad de extensiones y complementos que
+        permiten personalizar y amplicar su funcionalidad.
+        <br />
+        <br />
+        <strong>
+          <a
+            style={{ color: '#D3D4D6' }}
+            href='https://www.sublimetext.com'
+            target='_blank'
+          >
+            Sublime Text
+          </a>{' '}
+        </strong>
+        es uno de los editores de código más famosos usado por muchas personas
+        en la actualidad, de hecho era el editor de código que yo personalmente
+        usaba cuando empecé en el mundo del desarrollo web ya que, si no era el
+        más usado, era de uno de los más usados.{' '}
+        <strong>
+          <a
+            style={{ color: '#D3D4D6' }}
+            href='https://github.blog/2022-06-08-sunsetting-atom/'
+            target='_blank'
+          >
+            Atom
+          </a>{' '}
+        </strong>
+        desarrollado por GitHub, fue uno de los editores de código más usados en
+        su momento, y a pesar de tener una comunidad activa por bastante tiempo,
+        GitHub decidió darle fin de la vida útil el 15 de diciembre de 2022.
+        <br />
+        En el mercado existen otros editores como{' '}
+        <strong>
+          <a
+            style={{ color: '#D3D4D6' }}
+            href='https://notepad-plus-plus.org/downloads/'
+            target='_blank'
+          >
+            Notepad++
+          </a>
+        </strong>
+        ,
+        <strong>
+          {' '}
+          <a
+            style={{ color: '#D3D4D6' }}
+            href='https://brackets.io/'
+            target='_blank'
+          >
+            Brackets
+          </a>
+        </strong>
+        , entre otros, pero hay uno de ellos que resalta por encima de
+        cualquiera y que según información sobre el{' '}
+        <strong>Stack Overflow Developer Survey 2023</strong> lo utiliza más del
+        73% de las personas a nivel mundial (
+        <a
+          style={{ color: '#D3D4D6', textDecoration: 'underline' }}
+          href='https://survey.stackoverflow.co/2023/#integrated-development-environment'
+          target='_blank'
+        >
+          link
+        </a>
+        ), estoy hablando de{' '}
+        <strong>
+          <a
+            style={{ color: '#D3D4D6' }}
+            href='https://code.visualstudio.com/'
+            target='_blank'
+          >Visual Studio Code</a>, 
+        </strong>
       </>
     ),
     subtitulo: true,

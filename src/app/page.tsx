@@ -1,7 +1,7 @@
 import styles from './page.module.scss'
-import Card from './components/root/Card'
+import Card from './components/Card/Card'
 import { heroBannerRoot } from '@/assets/texts'
-import HeroBanner from './components/introduction/HeroBanner/heroBanner'
+import HeroBanner from './components/HeroBanner/heroBanner'
 
 export default function Home() {
   return (

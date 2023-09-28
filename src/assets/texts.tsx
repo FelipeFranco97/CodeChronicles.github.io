@@ -17,7 +17,7 @@ export const root: Root[] = [
   },
   {
     tag: 'CodeChronicles',
-    titulo: 'Herramientas',
+    titulo: 'Herramientas de Escritura de Código',
     contenido: 'Próximamente',
     url: '/tools',
   },
@@ -75,7 +75,7 @@ export const heroBannerIntroduccion: HeroBanner = {
 }
 
 export const heroBannerTools: HeroBanner = {
-  titulo: 'Herramientas',
+  titulo: 'Herramientas de Escritura de Código',
   urlServer: '/CodeChronicles.github.io/toolbanner.jpg',
   urlLocal: '/toolbanner.jpg',
   credits: (
@@ -109,7 +109,7 @@ export const middleText: MiddleText = {
 export const informationIntroduction: Information[] = [
   {
     titulo: 'Desarrollo Web',
-    paragraph: (
+    parrafo: (
       <>
         El desarrollo web es el proceso de crear y mantener sitios web en
         Internet. Involucra la creación de contenido, diseño visual,
@@ -127,10 +127,11 @@ export const informationIntroduction: Information[] = [
       </>
     ),
     subtitulo: false,
+    subtitulo_2: false,
   },
   {
     titulo: 'La Web',
-    paragraph: (
+    parrafo: (
       <>
         La web, abreviatura de World Wide Web, es un sistema de información
         global que permite ver y acceder documentos multimedia (texto, archivos,
@@ -152,10 +153,11 @@ export const informationIntroduction: Information[] = [
       </>
     ),
     subtitulo: true,
+    subtitulo_2: false,
   },
   {
     titulo: 'Internet',
-    paragraph: (
+    parrafo: (
       <>
         Internet es la red global que conecta a millones de computadores en todo
         el mundo. En esta red se utilizan los <strong>Navegadores</strong> tales
@@ -170,13 +172,14 @@ export const informationIntroduction: Information[] = [
       </>
     ),
     subtitulo: true,
+    subtitulo_2: false,
   },
 ]
 
 export const informationTools: Information[] = [
   {
     titulo: '¿Dónde escribo mi código?',
-    paragraph: (
+    parrafo: (
       <>
         Las herramientas de escritura de código cobran un papel fundamental en
         la vida de cada programador, cada quien lo personaliza a su gusto y lo
@@ -189,10 +192,11 @@ export const informationTools: Information[] = [
       </>
     ),
     subtitulo: false,
+    subtitulo_2: false,
   },
   {
     titulo: 'Editores de texto',
-    paragraph: (
+    parrafo: (
       <>
         Los editores de texto son programas diseñados para crear, editar y
         manipular archivos de texto que generalmente son de texto plano (.txt).
@@ -234,10 +238,11 @@ export const informationTools: Information[] = [
       </>
     ),
     subtitulo: true,
+    subtitulo_2: false,
   },
   {
     titulo: 'Editores de Código',
-    paragraph: (
+    parrafo: (
       <>
         Los editores de código, a diferencia de los editores de texto, son
         programas diseñados especificamente para la escritura, edición y gestión
@@ -312,10 +317,136 @@ export const informationTools: Information[] = [
             style={{ color: '#D3D4D6' }}
             href='https://code.visualstudio.com/'
             target='_blank'
-          >Visual Studio Code</a>, 
+          >
+            Visual Studio Code
+          </a>
         </strong>
+        , es un editor de código multiplataforma el cuál posee una comunidad
+        bastante amplia que día tras día ayudan en la construcción de
+        extensiones que permiten la personalización del software. Ofrece todas
+        las características básicas de un editor de código tales como el
+        resaltado de sintaxis y autocompletado de código, permite la integración
+        con sistemas de control de versiones, oporte para multiples lenguajes de
+        programación y actualizaciones frecuentes que traen mejoras constantes.
       </>
     ),
     subtitulo: true,
+    subtitulo_2: false,
+  },
+  {
+    titulo: 'Visual Studio Code y sus extensiones',
+    parrafo: (
+      <>
+        Visual Studio Code cuenta con miles de extensiones que pueden hacer que
+        la experiencia de escribir código sea mucho más placentera, a
+        continuación voy a nombrar las que en mi opinión pueden ser las más
+        útiles y que las aplico en mi día a día, aunque por efectos prácticos y
+        para no confundir con temas que se tocarán más adelante, enlistaré solo
+        las que sean utiles por el momento.
+        <ul>
+          <li>
+            <strong>
+              <a
+                style={{ color: '#D3D4D6', textDecoration: 'underline' }}
+                href='https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-es'
+                target='_blank'
+              >
+                Spanish Language Pack for Visual Studio Code
+              </a>
+            </strong>
+            : Es simplemente el paquede del idioma español para Visual Studio
+            Code.
+          </li>
+
+          <li>
+            <strong>
+              <a
+                style={{ color: '#D3D4D6', textDecoration: 'underline' }}
+                href='https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode'
+                target='_blank'
+              >
+                Prettier - Code formatter
+              </a>
+            </strong>
+            : Se trata de una extensión que nos va a organizar nuestro código de
+            acuerdo a unas reglas internas, los cambios que pueda hacer serán
+            simplemente visuales, pero que harán que el código sea más legible y
+            aplique buenas prácticas, para utilizarlo podemos seleccionar la
+            parte que queramos que nos arregle (puede ser todo el código o solo
+            una sección), dar clic derecho y seleccionar la opción &apos;Dar
+            formato al documento&apos; o al presionar las teclas Shift + Alt + F
+            también tendrá el mismo efecto.
+          </li>
+
+          <li>
+            <strong>
+              <a
+                style={{ color: '#D3D4D6', textDecoration: 'underline' }}
+                href='https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme'
+                target='_blank'
+              >
+                One Dark Pro
+              </a>
+            </strong>
+            : Es simplemente una extensión que nos permite cambiar el tema
+            (color) de nuestro editor de código, una vez instalado podemos dar
+            clic en el botón &apos;Configurar tema de color&apos; que aparece en
+            el apartado de extensiones de Visual Studio Code y seleccionar el
+            que más guste.
+          </li>
+
+          <li>
+            <strong>
+              <a
+                style={{ color: '#D3D4D6', textDecoration: 'underline' }}
+                href='https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme'
+                target='_blank'
+              >
+                Material Icon Theme
+              </a>
+            </strong>
+            : Es una extensión que nos va dar unos nuevos iconos a nuestras
+            carpetas y archivos según su nombre o su extensión, es simplemente
+            un cambio visual.
+          </li>
+
+          <li>
+            <strong>
+              <a
+                style={{ color: '#D3D4D6', textDecoration: 'underline' }}
+                href='https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer'
+                target='_blank'
+              >
+                Live Server
+              </a>
+            </strong>
+            : A mi parecer es una de las extensiones más útiles que ha hecho la
+            comunidad, nos da la posibilidad de mirar en tiempo real los cambios
+            que vayamos haciendo en nuestro código. Una vez instalado podemos
+            darle clic al botón que se nos creó en la parte inferior derecha que
+            dice &apos;Go Live&apos;.
+          </li>
+
+          <li>
+            <strong>
+              <a
+                style={{ color: '#D3D4D6', textDecoration: 'underline' }}
+                href='https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens'
+                target='_blank'
+              >
+                Error Lens
+              </a>
+            </strong>
+            : Es una extensión que resalta los errores, advertencias u otros
+            diagnósticos en el código que escribamos y nos da una posible
+            solución.
+          </li>
+        </ul>
+        A medida que se toquen algunos temas, mencionare que otras extensiones
+        que pueden ser útiles.
+      </>
+    ),
+    subtitulo: true,
+    subtitulo_2: true,
   },
 ]

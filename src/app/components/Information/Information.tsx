@@ -16,12 +16,12 @@ const Information = (props: InformationProps) => {
             info.subtitulo ? (
               <article className={styles.article_main} key={index}>
                 <h3 className={styles.h2_subtitle}>{info.titulo}</h3>
-                <p className={styles.p}>{info.paragraph}</p>
+                <p className={styles.p}>{info.parrafo}</p>
               </article>
             ) : (
               <article className={styles.article_main} key={index}>
                 <h1 className={styles.h1_title}>{info.titulo}</h1>
-                <p className={styles.p}>{info.paragraph}</p>
+                <p className={styles.p}>{info.parrafo}</p>
               </article>
             )
           )}

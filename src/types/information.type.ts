@@ -1,5 +1,6 @@
 export interface Information {
     titulo: string,
-    paragraph: JSX.Element,
+    parrafo: JSX.Element,
     subtitulo: boolean,
+    subtitulo_2: boolean,
 }

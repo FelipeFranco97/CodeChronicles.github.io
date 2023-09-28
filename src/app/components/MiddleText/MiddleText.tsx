@@ -1,4 +1,4 @@
-import { MiddleText } from '@/types/introduction/middle-text.type'
+import { MiddleText } from '@/types/middle-text.type'
 import styles from './MiddleText.module.scss'
 
 const MiddleText = (props: MiddleText) => {

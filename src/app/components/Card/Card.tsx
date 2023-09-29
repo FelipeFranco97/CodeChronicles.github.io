@@ -1,12 +1,16 @@
 import Link from 'next/link'
-import { root } from '@/assets/texts'
+import { Card } from '@/types/card.type'
 import styles from './Card.module.scss'
 
-export default function Card() {
+interface CardProps {
+  card: Card[]
+}
+
+export default function Card(props: CardProps) {
   return (
     <>
       <section className={styles.section_main}>
-        {root.map((card, index) => (
+        {props.card.map((card, index) => (
           <Link key={index} href={card.url} className={styles.link}>
             <h3 className={styles.h3_tag}>{card.tag}</h3>
             <h2 className={styles.h2_title}>{card.titulo}</h2>

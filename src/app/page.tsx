@@ -1,6 +1,6 @@
 import styles from './page.module.scss'
 import Card from './components/Card/Card'
-import { heroBannerRoot } from '@/assets/texts'
+import { heroBannerRoot, cardRoot } from '@/assets/texts'
 import HeroBanner from './components/HeroBanner/heroBanner'
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
         <h1 className={styles.h1_title}>¿Qué ruta elegirás hoy?</h1>
 
         <section className={styles.section_cards}>
-          <Card></Card>
+          <Card card={cardRoot}/>
         </section>
       </section>
     </>

@@ -1,14 +1,21 @@
+'use client'
+
+import { Img } from 'react-image'
 import { Header } from '@/types/header.type'
-import { Root } from '@/types/root.type'
+import { Card } from '@/types/card.type'
 import { HeroBanner } from '@/types/hero-banner.type'
 import { MiddleText } from '@/types/middle-text.type'
 import { Information } from '@/types/information.type'
+
+// Info related to header //
 
 export const header: Header = {
   titulo: 'CodeChronicles',
 }
 
-export const root: Root[] = [
+// Info related to cards //
+
+export const cardRoot: Card[] = [
   {
     tag: 'CodeChronicles',
     titulo: 'Introducción',
@@ -18,18 +25,18 @@ export const root: Root[] = [
   {
     tag: 'CodeChronicles',
     titulo: 'Herramientas de Escritura de Código',
-    contenido: 'Próximamente',
+    contenido: 'Editores de texto, editores de código y extensiones.',
     url: '/tools',
   },
   {
     tag: 'CodeChronicles',
-    titulo: 'Control de Versiones',
+    titulo: 'Front End',
     contenido: 'Próximamente',
-    url: '/',
+    url: '/frontend',
   },
   {
     tag: 'CodeChronicles',
-    titulo: 'Front-End',
+    titulo: 'Control de Versiones',
     contenido: 'Próximamente',
     url: '/',
   },
@@ -40,6 +47,29 @@ export const root: Root[] = [
     url: '/',
   },
 ]
+
+export const cardFrontend: Card[] = [
+  {
+    tag: 'CodeChronicles',
+    titulo: 'HTML',
+    contenido: 'Elementos, Semántica, Estándares y más.',
+    url: '/frontend/html',
+  },
+  {
+    tag: 'CodeChronicles',
+    titulo: 'CSS',
+    contenido: '',
+    url: '',
+  },
+  {
+    tag: 'CodeChronicles',
+    titulo: 'JavaScript',
+    contenido: '',
+    url: '',
+  },
+]
+
+// Info related to banners //
 
 export const heroBannerRoot: HeroBanner = {
   titulo: '¡Bienvenido!',
@@ -100,15 +130,73 @@ export const heroBannerTools: HeroBanner = {
   ),
 }
 
-export const middleText: MiddleText = {
+export const heroBannerFrontend: HeroBanner = {
+  titulo: 'Front End',
+  urlServer: '/CodeChronicles.github.io/frontendbanner.jpg',
+  urlLocal: '/frontendbanner.jpg',
+  credits: (
+    <>
+      Photo by{' '}
+      <a
+        href='https://unsplash.com/@pankajpatel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
+        target='_blank'
+        style={{ textDecoration: 'none', color: '#D3D4D6' }}
+      >
+        Pankaj Patel
+      </a>{' '}
+      on{' '}
+      <a
+        href='https://unsplash.com/photos/bYiw48KLbmw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
+        target='_blank'
+        style={{ textDecoration: 'none', color: '#D3D4D6' }}
+      >
+        Unsplash
+      </a>
+    </>
+  ),
+}
+
+export const heroBannerHtml: HeroBanner = {
+  titulo: 'HTML',
+  urlServer: '/CodeChronicles.github.io/htmlbanner.jpg',
+  urlLocal: '/htmlbanner.jpg',
+  credits: (
+    <>
+      Photo by{' '}
+      <a
+        href='https://unsplash.com/@jacksonsophat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
+        target='_blank'
+        style={{ textDecoration: 'none', color: '#D3D4D6' }}
+      >
+        Jackson Sophat
+      </a>{' '}
+      on{' '}
+      <a
+        href='https://unsplash.com/photos/wUbNvDTsOIc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
+        target='_blank'
+        style={{ textDecoration: 'none', color: '#D3D4D6' }}
+      >
+        Unsplash
+      </a>
+    </>
+  ),
+}
+
+// Info related to middle texts //
+
+export const middleTextIntroduction: MiddleText = {
   titulo: '¡Hola Programador!',
   texto:
     'Este es el inicio de una guía que empecé como un proyecto para mi mismo, en el que quiero escribir y documentar todo lo que he aprendido a través de mis años como ingeniero. Está guía está enfocada en el desarrollo web y tocaré desde los temas más básicos hasta conceptos un poco más avanzados. Tal vez esta guía le llegue a alguien que esté aprendiendo o que quiera reforzar sus conocimientos, sea quien sea espero que lo disfrute y aprenda.',
 }
 
+// Info related to main information //
+
 export const informationIntroduction: Information[] = [
   {
-    titulo: 'Desarrollo Web',
+    titulo: {
+      h1: 'Desarrollo Web',
+    },
     parrafo: (
       <>
         El desarrollo web es el proceso de crear y mantener sitios web en
@@ -126,11 +214,11 @@ export const informationIntroduction: Information[] = [
         términos.
       </>
     ),
-    subtitulo: false,
-    subtitulo_2: false,
   },
   {
-    titulo: 'La Web',
+    titulo: {
+      h2: 'La Web',
+    },
     parrafo: (
       <>
         La web, abreviatura de World Wide Web, es un sistema de información
@@ -152,11 +240,11 @@ export const informationIntroduction: Information[] = [
         protocolo <strong>HTTP</strong>.
       </>
     ),
-    subtitulo: true,
-    subtitulo_2: false,
   },
   {
-    titulo: 'Internet',
+    titulo: {
+      h2: 'Internet',
+    },
     parrafo: (
       <>
         Internet es la red global que conecta a millones de computadores en todo
@@ -171,14 +259,14 @@ export const informationIntroduction: Information[] = [
         existentes.
       </>
     ),
-    subtitulo: true,
-    subtitulo_2: false,
   },
 ]
 
 export const informationTools: Information[] = [
   {
-    titulo: '¿Dónde escribo mi código?',
+    titulo: {
+      h1: '¿Dónde escribo mi código?',
+    },
     parrafo: (
       <>
         Las herramientas de escritura de código cobran un papel fundamental en
@@ -191,11 +279,11 @@ export const informationTools: Information[] = [
         resaltar.
       </>
     ),
-    subtitulo: false,
-    subtitulo_2: false,
   },
   {
-    titulo: 'Editores de texto',
+    titulo: {
+      h2: 'Editores de texto',
+    },
     parrafo: (
       <>
         Los editores de texto son programas diseñados para crear, editar y
@@ -237,11 +325,11 @@ export const informationTools: Information[] = [
         del proyecto GNU, un sistema operativo basado en Unix.
       </>
     ),
-    subtitulo: true,
-    subtitulo_2: false,
   },
   {
-    titulo: 'Editores de Código',
+    titulo: {
+      h2: 'Editores de código',
+    },
     parrafo: (
       <>
         Los editores de código, a diferencia de los editores de texto, son
@@ -330,11 +418,11 @@ export const informationTools: Information[] = [
         programación y actualizaciones frecuentes que traen mejoras constantes.
       </>
     ),
-    subtitulo: true,
-    subtitulo_2: false,
   },
   {
-    titulo: 'Visual Studio Code y sus extensiones',
+    titulo: {
+      h3: 'Visual Studio Code y sus extensiones',
+    },
     parrafo: (
       <>
         Visual Studio Code cuenta con miles de extensiones que pueden hacer que
@@ -446,7 +534,123 @@ export const informationTools: Information[] = [
         que pueden ser útiles.
       </>
     ),
-    subtitulo: true,
-    subtitulo_2: true,
+  },
+]
+
+export const informationFrontend: Information[] = [
+  {
+    titulo: {
+      h1: 'Desarrollo Front end',
+    },
+    parrafo: (
+      <>
+        Cuando hablamos de Front end nos estamos refiriendo a la parte del
+        desarrollo web que se ocupa de crear lo que las personas ven e
+        interanctúan en una página web, como los textos, imágenes, colores,
+        botónes, animaciones, entre otros.
+        <br />
+        <br />
+        El front end utiliza 3 lenguajes principales, <strong>HTML</strong> que
+        se trata de un lenguaje de marcado, <strong>CSS</strong> el cuál es un
+        lenguaje de hojas de estilo y por último <strong>JavaScript</strong> un
+        lenguaje de programación, la información que brinda cada uno es tan
+        ámplia que cada uno tendrá su propia sección.
+        <br />
+        <br />
+        Pero antes de eso es bueno dar a conocer un aspecto importante de los
+        desarrolladores front end, nosotros no somos diseñadores web y
+        normalmente no tenemos conocimiento sobre temas como parte del diseño de{' '}
+        <strong>UI (user interface)</strong> y el diseño de{' '}
+        <strong>UX (user experience)</strong>, en el primero hablamos de un rol
+        que abarca el diseñador gráfico, el cuál se encarga de diseñar la
+        apariencia de la página web, y el desarrollador front-end que se encarga
+        de hacer funcionar ese diseño. Tanto el diseñador como el desarrollador
+        deben de estar en constante comunicación y las herramientas que
+        generalmente compartiran son{' '}
+        <strong>
+          <a
+            style={{ color: '#D3D4D6', textDecoration: 'underline' }}
+            href='https://www.figma.com'
+            target='_blank'
+          >
+            Figma
+          </a>{' '}
+        </strong>
+        o{' '}
+        <strong>
+          <a
+            style={{ color: '#D3D4D6', textDecoration: 'underline' }}
+            href='https://helpx.adobe.com/es/xd/get-started.html'
+            target='_blank'
+          >
+            Adobe XD
+          </a>{' '}
+        </strong>
+        para la maquetación de las vistas que tendrá la página web, y archivos
+        con extensiones{' '}
+        <strong>
+          <a
+            style={{ color: '#D3D4D6', textDecoration: 'underline' }}
+            href='https://www.adobe.com/co/products/photoshop.html'
+            target='_blank'
+          >
+            .psd (PhotoShop)
+          </a>{' '}
+        </strong>
+        o{' '}
+        <strong>
+          <a
+            style={{ color: '#D3D4D6', textDecoration: 'underline' }}
+            href='https://www.adobe.com/co/products/illustrator.html'
+            target='_blank'
+          >
+            .ai (Illustrator)
+          </a>{' '}
+        </strong>
+        , cabe recordar que NO es necesario saber de diseño gráfico para ser
+        desarrollador, pero si es bueno aprender a usar mínimamente herramientas
+        como Figma o Adobe XD para ser más ameno el proceso del código.
+        Usualemente el diseñador gráfico también se encarga del diseño de UX, el
+        cuál se encarga de crear una experiencia positiva, satisfactoria, fácil
+        e intuitiva para el usuario, teniendo en cuenta sus necesidades,
+        expectativas y comportamiento.
+      </>
+    ),
+  },
+]
+
+export const informationHtml: Information[] = [
+  {
+    titulo: {
+      h1: 'HTML: El lenguaje de la web',
+    },
+    parrafo: (
+      <>
+        HTML, o HyperText Markup Language, como bien se mencionó anteriormente
+        es un lenguaje de marcado diseñado para visualizar documentos en un
+        navegador web, ¿qué significa que sea un lenguaje de marcado? no es más
+        que un código de texto que contiene información el cual especifica como
+        debe de verse la página web. Existen otros lenguajes de marcado como{' '}
+        <strong>XML (eXtensible Markup Language)</strong> o{' '}
+        <strong>SGML (Standard Generalized Markup Language)</strong> pero a día
+        de hoy se utilizan en un contexto mucho más específico del que no se
+        profundizará.
+      </>
+    ),
+  },
+  {
+    titulo: {
+      h2: 'Inicialización de proyecto y estructura básica',
+    },
+    parrafo: (
+      <>
+        Para empezar a escribir código simplemente deberemos crear una carpeta
+        en computador en donde queremos que esté guardado y después abrir dicha
+        carpeta en nuestro editor de escritura de código, en esta guía usaré
+        Visual Studio Code (VS Code).
+      </>
+    ),
+    urlLocal: 'create_file.jpg',
+    urlServer: '/CodeChronicles.github.io/create_file.jpg',
   },
 ]

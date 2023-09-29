@@ -1,6 +1,13 @@
 export interface Information {
-    titulo: string,
+    titulo: Tamaño,
     parrafo: JSX.Element,
-    subtitulo: boolean,
-    subtitulo_2: boolean,
+    urlServer?: string,
+    urlLocal?: string,
+    codigo?: string,
+}
+
+interface Tamaño {
+    h1?: string,
+    h2?: string,
+    h3?: string,
 }

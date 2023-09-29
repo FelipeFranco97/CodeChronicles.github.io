@@ -1,6 +1,3 @@
-'use client'
-
-import { Img } from 'react-image'
 import { Header } from '@/types/header.type'
 import { Card } from '@/types/card.type'
 import { HeroBanner } from '@/types/hero-banner.type'

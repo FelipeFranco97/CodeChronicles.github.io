@@ -184,7 +184,7 @@ export const heroBannerHtml: HeroBanner = {
 export const middleTextIntroduction: MiddleText = {
   titulo: '¡Hola Programador!',
   texto:
-    'Este es el inicio de una guía que empecé como un proyecto para mi mismo, en el que quiero escribir y documentar todo lo que he aprendido a través de mis años como ingeniero. Está guía está enfocada en el desarrollo web y tocaré desde los temas más básicos hasta conceptos un poco más avanzados. Tal vez esta guía le llegue a alguien que esté aprendiendo o que quiera reforzar sus conocimientos, sea quien sea espero que lo disfrute y aprenda.',
+    'Comencé esta guía como un proyecto personal en el que quiero escribir y documentar todo lo que he aprendido a lo largo de mis años como ingeniero, centrándome en el desarrollo web. Cubriré una amplia gama de temas, desde los fundamentos hasta conceptos más avanzados. Espero que esta guía sea útil para aquellos que están aprendiendo o que desean reforzar sus conocimientos. Sea quien sea, ¡espero que disfrutes y aprendas!.',
 }
 
 // Info related to main information //
@@ -196,19 +196,19 @@ export const informationIntroduction: Information[] = [
     },
     parrafo: (
       <>
-        El desarrollo web es el proceso de crear y mantener sitios web en
-        Internet. Involucra la creación de contenido, diseño visual,
-        programación, y gestión de bases de datos, con el objetivo de
-        proporcionar una experiencia interactiva y accesible a los usuarios a
-        través de navegadores web. Este proceso abarca desde la planificación y
-        diseño inicial hasta la implementación técnica, garantizando la
-        funcionalidad, rendimiento y seguridad del sitio, además de adaptarse a
-        diversas plataformas y dispositivos para llegar a una audiencia amplia y
-        diversa en línea.
+        El desarrollo web implica crear y mantener sitios en Internet. Esto
+        abarca desde diseñar cómo se ven los sitios hasta hacer que funcionen
+        correctamente. Se necesita programación y a veces se manejan bases de
+        datos. El objetivo es hacer que los sitios sean interactivos y fáciles
+        de usar para las personas que los visitan en sus navegadores web. Desde
+        la idea inicial y el diseño hasta la parte técnica, todo esto se hace
+        para que el sitio funcione bien, se vea bien y sea seguro. También, se
+        adapta para que funcione en diferentes tipos de dispositivos y llegue a
+        muchas personas en línea.
         <br />
         <br />
-        Pero antes de seguir avanzando, es mejor entrar en detalle sobre algunos
-        términos.
+        Pero antes de continuar, vamos a hablar más en detalle sobre algunos
+        términos importantes en el desarrollo web.
       </>
     ),
   },
@@ -220,21 +220,25 @@ export const informationIntroduction: Information[] = [
       <>
         La web, abreviatura de World Wide Web, es un sistema de información
         global que permite ver y acceder documentos multimedia (texto, archivos,
-        imagenes, videos, etc), se puede pensar como si fuera una biblioteca
-        digital en la que se puede guardar todo tiempo de información.
+        imágenes, videos, etc), se puede pensar como si fuera una biblioteca
+        digital en la que se puede guardar todo tipo de información.
         <br />
         <br />
-        Ahora, ¿cómo funciona?, en el contexto de informática y las redes existe
-        un término llamado <strong>Protocolo</strong> que en simples palabras es
-        un conjunto de reglas que espcifica como se deben comunicar y
-        comportarse los dispositivos y programas cuando intercambian datos entre
-        si. Existen múltiples protocolos, pero la web está construida bajo dos
-        muy importantes, el primero es <strong>TCP/IP</strong> que funciona
-        principalmente para enviar y recibir datos y si seguimos con la analogía
-        de la biblioteca digital podríamos decir que cuando yo escribo la
-        dirección de un sitio web es como si estuviera buscando un libro en
-        dicha biblioteca, pero para que me pueda mostrar el libro la web usa el
-        protocolo <strong>HTTP</strong>.
+        ¿Cómo funciona esto? Bueno, en el mundo de la informática y las redes,
+        hay algo llamado <strong>Protocolo</strong>, que básicamente son reglas
+        que dicen cómo deben hablar y compartir información los dispositivos y
+        programas cuando están conectados. En el caso de la web, hay dos
+        protocolos muy importantes.
+        <br />
+        <br />
+        El primero se llama <strong>TCP/IP</strong> y se usa principalmente para
+        enviar y recibir datos. Puedes imaginarlo como buscar un libro en la
+        biblioteca digital, donde el TCP/IP te ayuda a encontrarlo.
+        <br />
+        Luego, está el protocolo <strong>HTTP</strong>, que es como el lenguaje
+        que la web utiliza para mostrarte el contenido que buscas. Así que
+        cuando escribes la dirección de un sitio web, estás hablando en HTTP
+        para que la web te muestre lo que necesitas.
       </>
     ),
   },
@@ -244,16 +248,15 @@ export const informationIntroduction: Information[] = [
     },
     parrafo: (
       <>
-        Internet es la red global que conecta a millones de computadores en todo
-        el mundo. En esta red se utilizan los <strong>Navegadores</strong> tales
-        como Chrome, Firefox, Edge, Opera, Brave, entre otros que nos ayudan a
-        viajar por toda esta red, por otro lado tenemos los{' '}
-        <strong>Buscadores</strong> los cuales están integrados dentro de los
-        navegadores y nos ayudan a encontrar las páginas web, Google, Bing,
-        Yahoo, DuckDuckGo o Ecosia son algunos ejemplos de buscadores. Por
-        último podemos hablar sobre los <strong>Hipervinculos</strong> (o
-        enlaces) que nos sirven como puentes entre las diferentes páginas web
-        existentes.
+        Internet es como una red gigante que conecta millones de computadoras en
+        todo el mundo. Para explorar esta red, usamos programas llamados{' '}
+        <strong>navegadores</strong>, como Chrome, Firefox, Edge, Opera, Brave y
+        otros. Estos navegadores nos permiten viajar por Internet. Además,
+        dentro de estos, hay herramientas llamadas <strong>buscadores</strong>,
+        como Google, Bing, Yahoo, DuckDuckGo y Ecosia, que nos ayudan a
+        encontrar sitios web. Por último, tenemos los{' '}
+        <strong>hipervínculos</strong> (o enlaces) que actúan como puentes entre
+        diferentes páginas web.
       </>
     ),
   },
@@ -266,14 +269,14 @@ export const informationTools: Information[] = [
     },
     parrafo: (
       <>
-        Las herramientas de escritura de código cobran un papel fundamental en
-        la vida de cada programador, cada quien lo personaliza a su gusto y lo
-        ajusta hasta sentirse cómodo con él.
+        Escribir código es una parte esencial de la vida de cualquier
+        programador, y cada uno tiene su propio estilo y preferencias para
+        hacerlo.
         <br />
         <br />
-        Quisiera empezar por describir las herramientas más básicas y que
-        normalmente no se usan en un ámbito profesional, pero que es bueno
-        resaltar.
+        Para empezar, vamos a hablar de algunas herramientas básicas que quizás
+        no se usen mucho en el mundo profesional, pero que son interesantes de
+        mencionar.
       </>
     ),
   },
@@ -284,20 +287,25 @@ export const informationTools: Information[] = [
     parrafo: (
       <>
         Los editores de texto son programas diseñados para crear, editar y
-        manipular archivos de texto que generalmente son de texto plano (.txt).
-        Se utilizan para tareas generales de edición de texto y no incluyen
-        caraceterísitcas avanzadas de desarrollo web.
+        trabajar con archivos de texto, generalmente en formato de texto plano
+        (.txt). Estas herramientas son ideales para tareas generales de edición
+        de texto y no están diseñadas específicamente para el desarrollo web
+        avanzado.
         <br />
         <br />
-        En Windows encontramos al <strong>Bloc de notas</strong> como editor
-        básico de texto que no nos proporciona funcionalidades avanzadas, su
-        equivalente en macOS <strong>TextEdit</strong> funciona de la misma
-        forma, al igual que <strong>Nano</strong> en sistemas Unix y Linux.
+        En el caso de Windows, contamos con el <strong>
+          Bloc de notas
+        </strong>{' '}
+        como un editor de texto básico que no ofrece características avanzadas.
+        En macOS, <strong>TextEdit</strong> funciona de manera similar, y en
+        sistemas Unix y Linux, tenemos <strong>Nano</strong> que cumple una
+        función similar.
         <br />
-        Me gustaría dar mención a otros dos editores de texto, que aunque no
-        tengan tantas funcionalidades y puedan funcionar igualmente como editor
-        de texto plano y que su uso ha ido disminuyendo a través de los años, se
-        han hecho con un pedazo en la historia de la programación,
+        <br />
+        Además, me gustaría mencionar dos editores de texto adicionales. Aunque
+        no cuentan con tantas funciones avanzadas y su popularidad ha disminuido
+        con el tiempo, han dejado una huella importante en la historia de la
+        programación:
         <strong>
           {' '}
           <a
@@ -316,10 +324,10 @@ export const informationTools: Information[] = [
             target='_blank'
           >
             Emacs
-          </a>{' '}
+          </a>
         </strong>
-        que aunque se pueda usar en distintos sistemas operativos, forma parte
-        del proyecto GNU, un sistema operativo basado en Unix.
+        . Estos editores pueden utilizarse en diversos sistemas operativos y
+        forman parte del proyecto GNU, un sistema operativo basado en Unix.
       </>
     ),
   },
@@ -330,15 +338,17 @@ export const informationTools: Information[] = [
     parrafo: (
       <>
         Los editores de código, a diferencia de los editores de texto, son
-        programas diseñados especificamente para la escritura, edición y gestión
-        de código en distintos lenguajes de programación. Estos editores traen
-        por defecto caraceterísticas avanzadas y herramientas para
-        desarrolladores tales como el resaltado de sintaxis, el autocompletado
-        de código y una amplia variedad de extensiones y complementos que
-        permiten personalizar y amplicar su funcionalidad.
+        programas diseñados especificamente para escribir, editar y gestionar
+        código en diferentes lenguajes de programación. Estos editores vienen
+        con características avanzadas de fábrica y herramientas útiles para
+        desarrolladores, como el resaltado de sintaxis, la autocompletación de
+        código y una amplia gama de extensiones y complementos que permiten
+        personalizar y ampliar su funcionalidad.
         <br />
         <br />
+        Uno de los editores de código más populares en la actualidad es
         <strong>
+          {' '}
           <a
             style={{ color: '#D3D4D6' }}
             href='https://www.sublimetext.com'
@@ -347,10 +357,9 @@ export const informationTools: Information[] = [
             Sublime Text
           </a>{' '}
         </strong>
-        es uno de los editores de código más famosos usado por muchas personas
-        en la actualidad, de hecho era el editor de código que yo personalmente
-        usaba cuando empecé en el mundo del desarrollo web ya que, si no era el
-        más usado, era de uno de los más usados.{' '}
+        . De hecho, fue el editor que yo mismo usé cuando comencé en el mundo
+        del desarrollo web. Sublime Text era uno de los más utilizados, si no el
+        más usado.{' '}
         <strong>
           <a
             style={{ color: '#D3D4D6' }}
@@ -360,9 +369,10 @@ export const informationTools: Information[] = [
             Atom
           </a>{' '}
         </strong>
-        desarrollado por GitHub, fue uno de los editores de código más usados en
-        su momento, y a pesar de tener una comunidad activa por bastante tiempo,
-        GitHub decidió darle fin de la vida útil el 15 de diciembre de 2022.
+        desarrollado por GitHub, también fue muy popular en su momento. Sin
+        embargo, a pesar de tener una comunidad activa durante mucho tiempo,
+        GitHub decidió poner fin a su desarrollo el 15 de diciembre de 2022.
+        <br />
         <br />
         En el mercado existen otros editores como{' '}
         <strong>
@@ -385,18 +395,17 @@ export const informationTools: Information[] = [
             Brackets
           </a>
         </strong>
-        , entre otros, pero hay uno de ellos que resalta por encima de
-        cualquiera y que según información sobre el{' '}
-        <strong>Stack Overflow Developer Survey 2023</strong> lo utiliza más del
-        73% de las personas a nivel mundial (
+        . Pero uno de ellos destaca por encima de todos, y según la información
+        del <strong>Stack Overflow Developer Survey 2023</strong>, es utilizado
+        por más del 73% de las personas en todo el mundo (
         <a
           style={{ color: '#D3D4D6', textDecoration: 'underline' }}
           href='https://survey.stackoverflow.co/2023/#integrated-development-environment'
           target='_blank'
         >
-          link
+          puedes encontrar el enlace aquí
         </a>
-        ), estoy hablando de{' '}
+        ). Estoy hablando de{' '}
         <strong>
           <a
             style={{ color: '#D3D4D6' }}
@@ -406,13 +415,13 @@ export const informationTools: Information[] = [
             Visual Studio Code
           </a>
         </strong>
-        , es un editor de código multiplataforma el cuál posee una comunidad
-        bastante amplia que día tras día ayudan en la construcción de
-        extensiones que permiten la personalización del software. Ofrece todas
-        las características básicas de un editor de código tales como el
-        resaltado de sintaxis y autocompletado de código, permite la integración
-        con sistemas de control de versiones, oporte para multiples lenguajes de
-        programación y actualizaciones frecuentes que traen mejoras constantes.
+        , un editor de código multiplataforma que cuenta con una comunidad muy
+        amplia que contribuye día a día a la creación de extensiones que
+        permiten personalizar el software. Ofrece todas las características
+        esenciales de un editor de código, como el resaltado de sintaxis, la
+        autocompletación de código, la integración con sistemas de control de
+        versiones, soporte para múltiples lenguajes de programación y
+        actualizaciones frecuentes que traen mejoras constantes.
       </>
     ),
   },
@@ -423,11 +432,10 @@ export const informationTools: Information[] = [
     parrafo: (
       <>
         Visual Studio Code cuenta con miles de extensiones que pueden hacer que
-        la experiencia de escribir código sea mucho más placentera, a
-        continuación voy a nombrar las que en mi opinión pueden ser las más
-        útiles y que las aplico en mi día a día, aunque por efectos prácticos y
-        para no confundir con temas que se tocarán más adelante, enlistaré solo
-        las que sean utiles por el momento.
+        la experiencia de escribir código sea mucho más placentera. A
+        continuación, mencionaré las extensiones que, en mi opinión, son las más
+        útiles para el uso diario. Por razones prácticas y para no abrumar, solo
+        listaré las que son útiles por el momento.
         <ul>
           <li>
             <strong>
@@ -439,8 +447,8 @@ export const informationTools: Information[] = [
                 Spanish Language Pack for Visual Studio Code
               </a>
             </strong>
-            : Es simplemente el paquede del idioma español para Visual Studio
-            Code.
+            : Esta extensión simplemente agrega el español como idioma en Visual
+            Studio Code.
           </li>
 
           <li>
@@ -453,14 +461,12 @@ export const informationTools: Information[] = [
                 Prettier - Code formatter
               </a>
             </strong>
-            : Se trata de una extensión que nos va a organizar nuestro código de
-            acuerdo a unas reglas internas, los cambios que pueda hacer serán
-            simplemente visuales, pero que harán que el código sea más legible y
-            aplique buenas prácticas, para utilizarlo podemos seleccionar la
-            parte que queramos que nos arregle (puede ser todo el código o solo
-            una sección), dar clic derecho y seleccionar la opción &apos;Dar
-            formato al documento&apos; o al presionar las teclas Shift + Alt + F
-            también tendrá el mismo efecto.
+            : Esta extensión es como un asistente de estilo para tu código. La
+            organiza según ciertas reglas internas para que sea más legible y
+            siga buenas prácticas. Puedes seleccionar la parte que deseas
+            formatear (puede ser todo el código o solo una sección) y hacer clic
+            derecho, luego seleccionar la opción ‘Dar formato al documento’;, o
+            simplemente presionar Shift + Alt + F y tendrá el mismo efecto.
           </li>
 
           <li>
@@ -473,11 +479,10 @@ export const informationTools: Information[] = [
                 One Dark Pro
               </a>
             </strong>
-            : Es simplemente una extensión que nos permite cambiar el tema
-            (color) de nuestro editor de código, una vez instalado podemos dar
-            clic en el botón &apos;Configurar tema de color&apos; que aparece en
-            el apartado de extensiones de Visual Studio Code y seleccionar el
-            que más guste.
+            : Esta extensión te permite cambiar el aspecto visual (colores) de
+            tu editor de código. Una vez instalada, puedes hacer clic en el
+            botón ‘Configurar tema de color’ en la sección de extensiones de
+            Visual Studio Code y seleccionar el que más te guste.
           </li>
 
           <li>
@@ -490,9 +495,9 @@ export const informationTools: Information[] = [
                 Material Icon Theme
               </a>
             </strong>
-            : Es una extensión que nos va dar unos nuevos iconos a nuestras
-            carpetas y archivos según su nombre o su extensión, es simplemente
-            un cambio visual.
+            : Con esta extensión, obtendrás nuevos iconos para tus carpetas y
+            archivos según su nombre o extensión. Es simplemente un cambio
+            visual que puede ayudarte a encontrar archivos más fácilmente.
           </li>
 
           <li>
@@ -505,11 +510,10 @@ export const informationTools: Information[] = [
                 Live Server
               </a>
             </strong>
-            : A mi parecer es una de las extensiones más útiles que ha hecho la
-            comunidad, nos da la posibilidad de mirar en tiempo real los cambios
-            que vayamos haciendo en nuestro código. Una vez instalado podemos
-            darle clic al botón que se nos creó en la parte inferior derecha que
-            dice &apos;Go Live&apos;.
+            : Esta es una de las extensiones más útiles en mi opinión. Te
+            permite ver los cambios que haces en tu código en tiempo real.
+            Después de instalarla, puedes hacer clic en el botón ‘Go Live’ que
+            aparece en la esquina inferior derecha.
           </li>
 
           <li>
@@ -522,9 +526,9 @@ export const informationTools: Information[] = [
                 Error Lens
               </a>
             </strong>
-            : Es una extensión que resalta los errores, advertencias u otros
-            diagnósticos en el código que escribamos y nos da una posible
-            solución.
+            : Esta extensión resalta los errores, advertencias y otros problemas
+            en tu código y ofrece posibles soluciones. Es como tener un
+            asistente para detectar y solucionar problemas en tu código.
           </li>
         </ul>
         A medida que se toquen algunos temas, mencionare que otras extensiones
@@ -541,29 +545,28 @@ export const informationFrontend: Information[] = [
     },
     parrafo: (
       <>
-        Cuando hablamos de Front end nos estamos refiriendo a la parte del
-        desarrollo web que se ocupa de crear lo que las personas ven e
-        interanctúan en una página web, como los textos, imágenes, colores,
-        botónes, animaciones, entre otros.
+        Cuando hablamos de Frontend, nos referimos a la parte del desarrollo web
+        que se encarga de crear lo que las personas ven e interactúan en una
+        página web, como textos, imágenes, colores, botones, animaciones y más.
         <br />
         <br />
-        El front end utiliza 3 lenguajes principales, <strong>HTML</strong> que
-        se trata de un lenguaje de marcado, <strong>CSS</strong> el cuál es un
-        lenguaje de hojas de estilo y por último <strong>JavaScript</strong> un
-        lenguaje de programación, la información que brinda cada uno es tan
-        ámplia que cada uno tendrá su propia sección.
+        El front end utiliza tres lenguajes principales: <strong>HTML</strong>,
+        que es un lenguaje de marcado; <strong>CSS</strong>, que es un lenguaje
+        de hojas de estilo; y <strong>JavaScript</strong>, que es un lenguaje de
+        programación. La información proporcionada por cada uno de estos
+        lenguajes es tan amplia que se merece su propia sección.
         <br />
         <br />
-        Pero antes de eso es bueno dar a conocer un aspecto importante de los
-        desarrolladores front end, nosotros no somos diseñadores web y
-        normalmente no tenemos conocimiento sobre temas como parte del diseño de{' '}
-        <strong>UI (user interface)</strong> y el diseño de{' '}
-        <strong>UX (user experience)</strong>, en el primero hablamos de un rol
-        que abarca el diseñador gráfico, el cuál se encarga de diseñar la
-        apariencia de la página web, y el desarrollador front-end que se encarga
-        de hacer funcionar ese diseño. Tanto el diseñador como el desarrollador
-        deben de estar en constante comunicación y las herramientas que
-        generalmente compartiran son{' '}
+        Sin embargo, antes de profundizar en estos lenguajes, es importante
+        destacar un aspecto fundamental del desarrollo Frontend: nosotros no
+        somos diseñadores web y generalmente no tenemos conocimientos en áreas
+        como el <strong>diseño de la interfaz de usuario (UI)</strong> y la{' '}
+        <strong>experiencia del usuario (UX)</strong>. En el primer caso, el
+        diseñador gráfico se encarga de diseñar la apariencia de la página web,
+        mientras que el desarrollador Frontend se encarga de hacer que ese
+        diseño funcione. Ambos, el diseñador y el desarrollador, deben mantener
+        una comunicación constante. Las herramientas que suelen compartir
+        incluyen{' '}
         <strong>
           <a
             style={{ color: '#D3D4D6', textDecoration: 'underline' }}
@@ -583,8 +586,8 @@ export const informationFrontend: Information[] = [
             Adobe XD
           </a>{' '}
         </strong>
-        para la maquetación de las vistas que tendrá la página web, y archivos
-        con extensiones{' '}
+        para la creación de las vistas de la página web y archivos con
+        extensiones{' '}
         <strong>
           <a
             style={{ color: '#D3D4D6', textDecoration: 'underline' }}
@@ -602,14 +605,17 @@ export const informationFrontend: Information[] = [
             target='_blank'
           >
             .ai (Illustrator)
-          </a>{' '}
+          </a>
         </strong>
-        , cabe recordar que NO es necesario saber de diseño gráfico para ser
-        desarrollador, pero si es bueno aprender a usar mínimamente herramientas
-        como Figma o Adobe XD para ser más ameno el proceso del código.
-        Usualemente el diseñador gráfico también se encarga del diseño de UX, el
-        cuál se encarga de crear una experiencia positiva, satisfactoria, fácil
-        e intuitiva para el usuario, teniendo en cuenta sus necesidades,
+        . Es importante recordar que no es necesario ser un diseñador gráfico
+        para ser desarrollador Frontend, pero es útil tener al menos un
+        conocimiento básico de herramientas como Figma o Adobe XD para facilitar
+        el proceso de codificación.
+        <br />
+        <br />
+        Generalmente, el diseñador gráfico también se encarga del diseño de UX,
+        que se centra en crear una experiencia positiva, satisfactoria, fácil e
+        intuitiva para el usuario, teniendo en cuenta sus necesidades,
         expectativas y comportamiento.
       </>
     ),
@@ -623,15 +629,16 @@ export const informationHtml: Information[] = [
     },
     parrafo: (
       <>
-        HTML, o HyperText Markup Language, como bien se mencionó anteriormente
-        es un lenguaje de marcado diseñado para visualizar documentos en un
-        navegador web, ¿qué significa que sea un lenguaje de marcado? no es más
-        que un código de texto que contiene información el cual especifica como
-        debe de verse la página web. Existen otros lenguajes de marcado como{' '}
+        HTML, o HyperText Markup Language (Lenguaje de Marcado de Hipertexto),
+        como mencionamos anteriormente, es un lenguaje diseñado para mostrar
+        documentos en un navegador web. Pero, ¿qué significa que sea un lenguaje
+        de marcado? Es simplemente un código de texto que contiene información
+        que describe cómo debe lucir una página web. Aunque existen otros
+        lenguajes de marcado como{' '}
         <strong>XML (eXtensible Markup Language)</strong> o{' '}
-        <strong>SGML (Standard Generalized Markup Language)</strong> pero a día
-        de hoy se utilizan en un contexto mucho más específico del que no se
-        profundizará.
+        <strong>SGML (Standard Generalized Markup Language)</strong>, hoy en día
+        se utilizan en contextos más específicos que no exploraremos en detalle
+        aquí.
       </>
     ),
   },
@@ -641,13 +648,374 @@ export const informationHtml: Information[] = [
     },
     parrafo: (
       <>
-        Para empezar a escribir código simplemente deberemos crear una carpeta
-        en computador en donde queremos que esté guardado y después abrir dicha
-        carpeta en nuestro editor de escritura de código, en esta guía usaré
-        Visual Studio Code (VS Code).
+        Para comenzar a escribir código, primero debemos crear una carpeta en
+        nuestro ordenador donde deseemos guardar nuestros archivos. Luego,
+        abriremos esa carpeta en nuestro editor de código. En esta guía,
+        utilizaré Visual Studio Code (VS Code).
+        <br />
+        <br />
+        Nombraremos el archivo como: <pre>index.html</pre> Si tienes instalada
+        la extensión{' '}
+        <strong>
+          <a
+            style={{ color: '#D3D4D6', textDecoration: 'underline' }}
+            href='https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme'
+            target='_blank'
+          >
+            Material Icon Theme
+          </a>
+        </strong>
+        , podrás notar cómo el ícono del archivo cambia automáticamente para una
+        identificación visual más sencilla.
       </>
     ),
-    urlLocal: 'create_file.jpg',
+    urlLocal: '/create_file.jpg',
     urlServer: '/CodeChronicles.github.io/create_file.jpg',
+  },
+  {
+    parrafo: (
+      <>
+        Visual Studio Code incluye una herramienta incorporada llamada{' '}
+        <strong>Emmet</strong>, que permite generar código HTML y CSS de manera
+        rápida y eficiente mediante abreviaciones. Aprender estas abreviaciones
+        nos ayudará a escribir código de forma ágil. Por ejemplo, para crear la
+        estructura básica de un archivo HTML, simplemente escribimos:{' '}
+        <pre>html:5</pre> Lo que abrirá una ventana de Emmet con la abreviación
+        correspondiente. Luego, podemos presionar Enter o seleccionarla con el
+        puntero para obtener la estructura básica. Si por alguna razón la
+        ventana no se abre, podemos abrirla manualmente presionando Ctrl +
+        Space.
+      </>
+    ),
+    urlLocal: '/emmet_html.jpg',
+    urlServer: '/CodeChronicles.github.io/emmet_html.jpg',
+  },
+  {
+    titulo: {
+      h2: 'Elementos, Etiquetas y Atributos',
+    },
+    parrafo: (
+      <>
+        Los elementos, las etiquetas y los atributos son conceptos fundamentales
+        en HTML que trabajan en conjunto. Utilizaré la estructura básica de HTML
+        para explicar estos conceptos.
+        <br />
+        <br />
+        Primero tenemos el <strong>elemento</strong>, que es una unidad de
+        contenido que tiene una función específica en una página web. Por
+        ejemplo, en la estructura básica tenemos al elemento{' '}
+        <strong>&lt;title&gt;</strong>, que se utiliza para crear el título de
+        nuestra página web.
+        <br />
+        <br />
+        Lo siguiente son las <strong>etiquetas</strong>, que son un símbolo que
+        se utiliza para marcar el inicio y el final de un elemento en HTML. Las
+        etiquetas se colocan entre corchetes angulares (o también conocidos como
+        mayor que y menor que) <strong>&lt;</strong> y <strong>&gt;</strong>.
+        <br />
+        <br />
+        Por último, tenemos los <strong>atributos</strong>, los cuales
+        proporcionan información adicional sobre un elemento y se especifica
+        dentro de la etiqueta de apertura de un elemento. Los atributos tienen
+        la forma ‘nombre=valor’.
+        <br />
+        Por ejemplo, miremos todas las etiquetas y atributos de la estructura
+        básica:
+      </>
+    ),
+    codigo: `
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+    </body>
+    </html>
+    `,
+  },
+  {
+    parrafo: (
+      <>
+        <ul style={{listStyleType: 'none'}}>
+          <li>
+            <strong>&lt;!DOCTYPE html&gt;</strong>: DOCTYPE no es una etiqueta
+            como tal, se trata de una declaración que define la versión HTML que
+            se usará en el documento, en esta caso indica que se está usando
+            HTML5.
+          </li>
+          <br />
+          <li>
+            <strong>&lt;html lang=&quot;en&quot;&gt;</strong>: La etiqueta{' '}
+            <strong>html</strong> marca el comienzo del documento HTML y
+            contiene todo el contenido de la página. En este caso, tiene el
+            atributo <strong>lang=&quot;en&quot;</strong>,para especificar que
+            el idioma principal del documento es el inglés, esto viene por
+            defecto. En este documento estamos usando el español como idioma
+            pricipal, por lo que lo cambiaremmos a <strong>‘es’</strong>.
+          </li>
+          <br />
+          <li>
+            <strong>&lt;head&gt;</strong>: La etiqueda <strong>head</strong>{' '}
+            contiene metadatos (información adicional sobre el documento web),
+            los cuales no son visibles en la página web, y también contiene
+            enlaces a recursos externos que afectan al documento.
+            <ul style={{listStyleType: 'none'}}>
+              <br />
+              <li>
+                <strong>&lt;meta&gt;</strong>: Es la etiqueta que tiene
+                información de los metadatos, en este caso tenemos varios, la
+                primera tiene el atributo <strong>charset</strong> el cuál nos
+                define la condificación de caracteres, es decir, el tipo de
+                letras o símbolos que podemos usar, en este caso{' '}
+                <strong>UTF-8</strong> puede representar una amplia gama de
+                caraceteres de diferentes idiomas y símbolos, podemos usar los
+                acentos (o tildes) del español (á, é, í, ó, ú) al igual que la
+                ‘ñ’,tambien se puede usar letras o símbolos que no se utilizan
+                en el español como la cedilla (ç), el alfabeto cirílico (б, г,
+                д, ж), el alfabeto árabe (ﺏ ﺕ ﺱ) y muchos más.
+                <br />
+                Existen otras codificaciones como <strong>UTF-16</strong>,{' '}
+                <strong>UTF-32</strong>, <strong>ISO-8859-1 (Latin-1)</strong>,{' '}
+                <strong>ISO-8859-15 (Latin-9)</strong>, pero se utilizan muy
+                pocas veces, ya que no tienen la misma cantidad de caracteres
+                que UTF-8, y las que si tienen la misma cantidad ocupan más
+                espacio en memoria, o sea, la página puede quedar más pesada por
+                lo tanto se tardará más en abrir o cargar información.
+                <br />
+                El otro atributo que vemos es <strong>name</strong> y se utiliza
+                para especificar el nombre o tipo de metadato, puede tener como
+                valor ‘keywords’, ‘description’, ‘name’ o como en este caso
+                ‘viewport’ y se utiliza para controlar como se debe de mostrar
+                la página web en dispositivos móviles y tablets. En este caso
+                estamos utilizando otros atributos para describir mejor el
+                viewport, por ejemplo <strong>content</strong> complementa el
+                atributo ‘name’ diciendole que el ancho de la página se ajustará
+                automáticamente al ancho del dispositivo, es decir se adaptara
+                al tamaño de la pantalla <strong>(width=device-width)</strong>,
+                y además establaecera un zoom de la página en 1.0, es decir
+                mostrará su tamaño real por defecto sin ningún aumento.
+              </li>
+              <br />
+              <li>
+                <strong>&lt;title&gt;</strong>: Lo último que encontramos en el
+                head es la etiqueta <strong>title</strong> con la cual podemos
+                establecer el título del documento. Este título se muestra en la
+                pestaña del navegador, por defecto dice ‘Document’ pero se
+                puede cambiar por lo que se quiera.
+              </li>
+            </ul>
+            <br />
+            <strong>&lt;body&gt;</strong>: Por último, la etiqueta{' '}
+            <strong>body</strong>, marca el comienzo del contenido visible de la
+            página web, como las imagenes, el texto, los enlaces y otros
+            elementos.
+          </li>
+        </ul>
+        Para ver todas las etiquetas de HTML, recomiendo visitar la web de{' '}
+        <strong>
+          <a
+            style={{ color: '#D3D4D6', textDecoration: 'underline' }}
+            href='https://www.w3schools.com/TAGS/default.asp'
+            target='_blank'
+          >
+            w3schools
+          </a>
+        </strong>
+        .
+      </>
+    ),
+  },
+  {
+    titulo: {
+      h2: 'HTML5, última versión.',
+    },
+    parrafo: (
+      <>
+        HTML5 fue lanzada en 2014 y trajo consigo muchas novedades en cuanto a
+        sus novedades, no voy a nombrar todas pero si las más importantes:
+        <ul style={{listStyleType: 'none'}}>
+          <li>
+            <strong>&lt;header&gt;</strong> y <strong>&lt;footer&gt;</strong>:
+            Se utilizan para definir el encabezado y pie de página de una
+            website.
+          </li>
+          <br />
+          <li>
+            <strong>&lt;nav&gt;</strong>: Se utiliza para definir un bloque de
+            navegación, algo así como un menú en el que puedes ir a distintas
+            partes de la página web o enlaces externos. Normalmente va dentro
+            del header o del footer.
+          </li>
+          <br />
+          <li>
+            <strong>&lt;section&gt;</strong>: Se utiliza para dividr el
+            contenido de una página web en secciones temáticas.
+          </li>
+          <br />
+          <li>
+            <strong>&lt;article&gt;</strong>: Se utiliza para marca contenido
+            independiente en una página web, normalmente va dentro de la
+            etiqueta section.
+          </li>
+          <br />
+          <li>
+            <strong>&lt;video&gt;</strong> y <strong>&lt;audio&gt;</strong>:
+            Permiten la inclusión de contenido multimedia enriquecido, como
+            videos y audio, directamente en una página web sin necesidad de
+            complementos de terceros.
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    titulo: {
+      h2: 'HTML Semántico',
+    },
+    parrafo: (
+      <>
+        La semántica en el HTML es un tema del cual no se habla cuando se está
+        aprendiendo y forma parte de las buenas prácticas, el HTML semántico es
+        una forma de estructurar el documento de manera que cada etiqueta,
+        elemento y atributo sea acorde a su función con el contenido.
+        <br />
+        El uso del HTML semántico nos ayuda a no usar etiquetas genéricas o no
+        semánticas como <strong>&lt;div&gt;</strong> y{' '}
+        <strong>&lt;span&gt;</strong>, ya que aunque visualmente la información
+        se estructure de una misma manera, los motores de los buscadores van a
+        entender mejor la información si la página web tiene un sentido claro y
+        organizado, por lo que podemos evitar el uso de div y usar section y
+        article en su lugar, y usar p en lugar de span.
+      </>
+    ),
+  },
+  {
+    titulo: {
+      h3: 'Accesibilidad',
+    },
+    parrafo: (
+      <>
+        El uso adecuado del HTML semántico tiene un impacto significativo en la{' '}
+        <strong>accesibilidad</strong>. Ayuda a que las tecnologías de
+        asistencia, diseñadas para personas con discapacidades visuales o
+        cognitivas, puedan interpretar y presentar el contenido de manera
+        precisa. Además, es importante destacar que el uso correcto de HTML
+        semántico también contribuye a mejorar el{' '}
+        <strong>SEO (Search Engine Optimization)</strong> que es el proceso de
+        aumentar la visibilidad y el ranking de un sitio web en los resultados
+        de búsqueda de motores como Google.
+        <br />
+        Por último, pero no menos importante, el HTML semántico mejora la{' '}
+        <strong>legibilidad</strong> del código, lo que facilita la comprensión
+        por parte de los desarrolladores. Además, prepara el contenido de manera
+        más efectiva para futuras actualizaciones y garantiza la compatibilidad
+        con los <strong>futuros estándares</strong>.
+      </>
+    ),
+  },
+  {
+    titulo: {
+      h2: 'Prácticas Recomendadas, las Reglas no Escritas',
+    },
+    parrafo: (
+      <>
+        Existen una serie de prácticas recomendadas al escribir código HTML. Una
+        de ellas es el uso de etiquetas semánticas, tema que ya hemos abordado
+        anteriormente. Aquí te presento algunas otras a tener en cuenta:
+        <ul style={{listStyleType: 'none'}}>
+          <li>
+            <strong>Utilizar rutas relativas</strong>: Es mejor usar rutas
+            relativas en lugar de rutas absolutas cuando necesites enlazar
+            imágenes, archivos de estilo (CSS) y scripts (JavaScript). Esto hace
+            que mover tu sitio web a otro lugar sea más fácil.
+          </li>
+          <br />
+          <li>
+            <strong>Mantener la separación de contenido y presentación</strong>:
+            Intenta mantener separado el contenido (HTML), el diseño (CSS) y las
+            funciones (JavaScript). Esto hace que tu código sea más ordenado y
+            fácil de manejar.
+          </li>
+          <br />
+          <li>
+            <strong>Carga JavaScript al final</strong>: Es mejor cargar los
+            archivos JavaScript al final de la página para asegurarte de que el
+            contenido se carga primero.
+          </li>
+          <br />
+          <li>
+            <strong>Comentar el código</strong>: Agrega notas en tu código para
+            ayudarte a recordar qué hace cada parte, especialmente si estás
+            trabajando con otras personas. Pero recuerda, no te pases con las
+            notas.
+          </li>
+          <br />
+          <li>
+            <strong>Usar atributos alt en imágenes</strong>: Agrega una
+            descripción a tus imágenes con el atributo ‘alt’. Esto ayuda a las
+            personas que usan lectores de pantalla y también puede mejorar tu
+            posicionamiento en los motores de búsqueda.
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    titulo: {
+      h2: 'Internacionalización y Estándares',
+    },
+    parrafo: (
+      <>
+        La <strong>internacionalización (o i18n)</strong> es el proceso de
+        adaptar software, sitios web o aplicaciones a diferentes idiomas y
+        culturas. Esto implica separar el contenido que debe ser localizable
+        (como texto, formatos de fecha y moneda) del código fuente de la
+        aplicación para que puedan ser traducidos y adaptados para su uso en
+        diferentes regiones o idiomas.
+        <br />
+        <br />
+        Para que todos los desarrolladores en todo el mundo utilicen exactamente
+        la misma i18n, se utiliza un <strong>estándar</strong>, que es una
+        especificación técnica que establece un conjunto de reglas, directices y
+        criterios. El estándar para la accesibilidad (lo que se mencionaba
+        anteriormente con respecto al HTML semántico) se llama{' '}
+        <strong>WCAG (Web Content Accessibility Guidelines)</strong>, creado por
+        la <strong>W3C (World Wide Web Consortium)</strong> y actualmente está
+        en la versión 2.1.
+        <br />
+        <br />
+        Las <strong>WCAG 2.1</strong>, como se mencionaba anteriormente, son
+        pautas desarrolladas que establecen estándares y cada vez que se vaya a
+        desarrollar una aplicación, es muy recomendable visitar la documentación
+        para seguir las pautas:
+        <br />
+        <br />
+        Inglés:{' '}
+        <strong>
+          <a
+            style={{ color: '#D3D4D6', textDecoration: 'underline' }}
+            href='https://www.w3.org/TR/WCAG21/'
+            target='_blank'
+          >
+            https://www.w3.org/TR/WCAG21/
+          </a>
+        </strong>
+        <br />
+        Español (traducción voluntaria no oficial):{' '}
+        <strong>
+          <a
+            style={{ color: '#D3D4D6', textDecoration: 'underline' }}
+            href='https://www.w3.org/WAI/standards-guidelines/wcag/glance/es'
+            target='_blank'
+          >
+            https://www.w3.org/WAI/standards-guidelines/wcag/glance/es
+          </a>
+        </strong>
+      </>
+    ),
   },
 ]

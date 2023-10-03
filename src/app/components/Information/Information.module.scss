@@ -11,11 +11,11 @@
   }
 
   .section_info {
-    margin: 0 5vw;
+    width: 100%;
 
     .article_main {
       line-height: 200%;
-      margin-bottom: 10vh;
+      margin: 0 5vw 10vh 5vw;
 
       .h1_title {
         margin: 10vh 0;
@@ -27,8 +27,25 @@
         font-size: calc(0.6vw + 1em);
       }
 
-      .p {
+      .p_parrafo {
         font-size: calc(0.2vw + 1em);
+      }
+
+      .image_container {
+        display: flex;
+
+        .image {
+          object-fit: cover;
+          max-width: 100%;
+          margin: 0 auto;
+        }
+      }
+
+      .container_pre {
+        .pre_code {
+          overflow-x: auto;
+          background-color: #333;
+        }
       }
     }
   }

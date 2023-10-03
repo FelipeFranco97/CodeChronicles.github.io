@@ -1,5 +1,5 @@
 export interface Information {
-    titulo: Tamaño,
+    titulo?: Tamaño,
     parrafo: JSX.Element,
     urlServer?: string,
     urlLocal?: string,

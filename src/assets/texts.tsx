@@ -55,8 +55,8 @@ export const cardFrontend: Card[] = [
   {
     tag: 'CodeChronicles',
     titulo: 'CSS',
-    contenido: '',
-    url: '',
+    contenido: 'Selectores, Responsive, Frameworks y más.',
+    url: '/frontend/css',
   },
   {
     tag: 'CodeChronicles',
@@ -170,6 +170,32 @@ export const heroBannerHtml: HeroBanner = {
       on{' '}
       <a
         href='https://unsplash.com/photos/wUbNvDTsOIc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
+        target='_blank'
+        style={{ textDecoration: 'none', color: '#D3D4D6' }}
+      >
+        Unsplash
+      </a>
+    </>
+  ),
+}
+
+export const heroBannerCss: HeroBanner = {
+  titulo: 'CSS',
+  urlServer: '/CodeChronicles.github.io/cssbanner.jpg',
+  urlLocal: '/cssbanner.jpg',
+  credits: (
+    <>
+      Photo by{' '}
+      <a
+        href='https://unsplash.com/@pankajpatel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
+        target='_blank'
+        style={{ textDecoration: 'none', color: '#D3D4D6' }}
+      >
+        Pankaj Patel
+      </a>{' '}
+      on{' '}
+      <a
+        href='https://unsplash.com/photos/6JVlSdgMacE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
         target='_blank'
         style={{ textDecoration: 'none', color: '#D3D4D6' }}
       >
@@ -719,6 +745,14 @@ export const informationHtml: Information[] = [
         dentro de la etiqueta de apertura de un elemento. Los atributos tienen
         la forma ‘nombre=valor’.
         <br />
+        Hay dos atributos importantes de los que tenemos que hablar, el primero
+        es el atributo ‘id’ el cual se utiliza para identificar de manera única
+        un elemento de una página HTML, por lo que no pueden haber dos elementos
+        con el mismo id, el segundo atributo es ‘class’ y también funciona como
+        un identificador pero a diferencia del id, dos o más elementos pueden
+        tener la misma class, en el módulo de <strong>css</strong> se explicará
+        uno de sus usos.
+        <br />
         Por ejemplo, miremos todas las etiquetas y atributos de la estructura
         básica:
       </>
@@ -740,7 +774,7 @@ export const informationHtml: Information[] = [
   {
     parrafo: (
       <>
-        <ul style={{listStyleType: 'none'}}>
+        <ul style={{ listStyleType: 'none' }}>
           <li>
             <strong>&lt;!DOCTYPE html&gt;</strong>: DOCTYPE no es una etiqueta
             como tal, se trata de una declaración que define la versión HTML que
@@ -763,7 +797,7 @@ export const informationHtml: Information[] = [
             contiene metadatos (información adicional sobre el documento web),
             los cuales no son visibles en la página web, y también contiene
             enlaces a recursos externos que afectan al documento.
-            <ul style={{listStyleType: 'none'}}>
+            <ul style={{ listStyleType: 'none' }}>
               <br />
               <li>
                 <strong>&lt;meta&gt;</strong>: Es la etiqueta que tiene
@@ -804,8 +838,8 @@ export const informationHtml: Information[] = [
                 <strong>&lt;title&gt;</strong>: Lo último que encontramos en el
                 head es la etiqueta <strong>title</strong> con la cual podemos
                 establecer el título del documento. Este título se muestra en la
-                pestaña del navegador, por defecto dice ‘Document’ pero se
-                puede cambiar por lo que se quiera.
+                pestaña del navegador, por defecto dice ‘Document’ pero se puede
+                cambiar por lo que se quiera.
               </li>
             </ul>
             <br />
@@ -837,7 +871,7 @@ export const informationHtml: Information[] = [
       <>
         HTML5 fue lanzada en 2014 y trajo consigo muchas novedades en cuanto a
         sus novedades, no voy a nombrar todas pero si las más importantes:
-        <ul style={{listStyleType: 'none'}}>
+        <ul style={{ listStyleType: 'none' }}>
           <li>
             <strong>&lt;header&gt;</strong> y <strong>&lt;footer&gt;</strong>:
             Se utilizan para definir el encabezado y pie de página de una
@@ -926,7 +960,7 @@ export const informationHtml: Information[] = [
         Existen una serie de prácticas recomendadas al escribir código HTML. Una
         de ellas es el uso de etiquetas semánticas, tema que ya hemos abordado
         anteriormente. Aquí te presento algunas otras a tener en cuenta:
-        <ul style={{listStyleType: 'none'}}>
+        <ul style={{ listStyleType: 'none' }}>
           <li>
             <strong>Utilizar rutas relativas</strong>: Es mejor usar rutas
             relativas en lugar de rutas absolutas cuando necesites enlazar
@@ -1018,4 +1052,101 @@ export const informationHtml: Information[] = [
       </>
     ),
   },
+]
+
+export const informationCss: Information[] = [
+  {
+    titulo: {
+      h1: 'CSS: El Pincel de la Web',
+    },
+    parrafo: (
+      <>
+        CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo que se
+        utiliza para dar apariencia y estilo a las páginas HTML. Una de las
+        ventajas más significativas de CSS es su capacidad para separar la
+        estructura (HTML) de la presentación (CSS). Esto significa que puedes
+        modificar la apariencia de un sitio web sin necesidad de alterar su
+        contenido o funcionalidad.
+        <br />
+        Las modificaciones de apariencia que podemos aplicar son muy variadas e
+        incluyen cambios en el tamaño de la letra, la fuente, la posición,
+        animaciones, colores de texto o de fondo de la página web, entre muchas
+        otras. A continuación, explicaremos las más utilizadas en el día a día.
+      </>
+    ),
+  },
+  {
+    titulo: {
+      h3: '¿Cómo inicio mi archivo CSS y cómo lo conecto a mi documento HTML?',
+    },
+    parrafo: (
+      <>
+        Para crear y empezar un archivo CSS, simplemente sigue estos pasos:
+        <ol>
+          <li>
+            Haz clic nuevamente en el botón ‘Nuevo Archivo’, como lo hiciste al
+            crear el archivo HTML.
+          </li>
+          <br />
+          <li>
+            Luego, nómbralo como ‘styles.css’. Este nombre, al igual que el que
+            le diste al archivo HTML, sigue buenas prácticas, pero en realidad,
+            puedes elegir cualquier nombre que desees.
+          </li>
+        </ol>
+      </>
+    ),
+    urlLocal: '/create_file_css.jpg',
+    urlServer: '/CodeChronicles.github.io/create_file_css.jpg',
+  },
+  {
+    parrafo: (
+      <>
+        Para enlazar tu archivo CSS a tu documento HTML, sigue estos pasos:
+        <ol>
+          <li>
+            Abre la sección <strong>&lt;head&gt;</strong> de tu documento HTML.
+          </li>
+          <br />
+          <li>
+            Crea un elemento <strong>&lt;link&gt;</strong> dentro de{' '}
+            <strong>&lt;head&gt;</strong>.
+          </li>
+          <br />
+          <li>
+            El elemento <strong>&lt;link&gt;</strong> debe tener dos atributos.
+            El primero es <strong>rel</strong>, que se utiliza para especificar
+            la relación entre el documento HTML y el recurso que se va a
+            enlazar. En este caso, le damos el valor{' '}
+            <strong>&quot;stylesheet&quot;</strong>, lo que significa que el
+            recurso enlazado es una hoja de estilo CSS.
+          </li>
+          <br />
+          <li>
+            El segundo atributo es <strong>href</strong>, que se utiliza para
+            especificar la ruta donde se encuentra el archivo a enlazar. En este
+            caso, el valor que le damos es{' '}
+            <strong>&quot;/styles.css&quot;</strong>.
+          </li>
+        </ol>
+        <br />
+        Así debe de quedar el archivo HTML:
+      </>
+    ),
+    codigo: `
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        
+    </body>
+    </html>
+    `
+  },
+  
 ]

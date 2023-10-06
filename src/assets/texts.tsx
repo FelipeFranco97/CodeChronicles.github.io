@@ -1146,7 +1146,243 @@ export const informationCss: Information[] = [
         
     </body>
     </html>
-    `
+    `,
   },
-  
+  {
+    titulo: {
+      h2: 'Sintaxsis, Selectores y Propiedades Básicas',
+    },
+    parrafo: (
+      <>
+        La sintaxsis de CSS se compone de reglas que indican cómo se debe
+        aplicar el estilo a los elementos HTML. Cada regla consta de dos partes
+        principales: el selector y el bloque de declaración (o bloque de
+        estilos).
+        <br />
+        Pero, ¿qué es un selector? Simplemente, es el elemento HTML al que se le
+        aplicará el estilo. Por ejemplo, si deseamos darle un diseño a un
+        párrafo (un elemento <strong>&lt;p&gt;</strong>), se vería así:
+      </>
+    ),
+    codigo: `
+    p {
+
+    }
+    `,
+  },
+  {
+    parrafo: (
+      <>
+        Pero, ¿qué pasa si tenemos varios elementos <strong>&lt;p&gt;</strong>{' '}
+        en nuestro código y solo queremos estilizar uno de ellos? Para ello,
+        debemos utilizar los atributos <strong>id</strong> o{' '}
+        <strong>class</strong> de HTMLRecuerda que id es un identificador único
+        y solo puede tener un elemento, mientras que class es un identificador
+        múltiple que varios elementos pueden tener. Entonces, si tienes dos
+        párrafos en tu documento HTML y solo deseas darle estilo a uno, puedes
+        asignarle un <strong>id</strong>, como se muestra a continuación:
+      </>
+    ),
+    codigo: `
+    <body>
+      <p id="parrafoEstilos">Párrafo de ejemplo</p>
+    </body>
+    `,
+  },
+  {
+    parrafo: <>El selector CSS correspondiente sería:</>,
+    codigo: `
+    #parrafoEstilos {
+    
+    }
+    `,
+  },
+  {
+    parrafo: (
+      <>
+        Por otro lado, si tenemos tres párrafos y solo queremos darle estilo a
+        dos de ellos, podemos usar una <strong>class</strong> de la siguiente
+        manera:
+      </>
+    ),
+    codigo: `
+    <body>
+      <p>Párrafo de ejemplo 1</p>
+      <p class="parrafosEstilos">Párrafo de ejemplo 2</p>
+      <p class="parrafosEstilos">Párrafo de ejemplo 3</p>
+    </body>
+    `,
+  },
+  {
+    parrafo: <>Y su respectivo selector CSS se vería así:</>,
+    codigo: `
+    .parrafosEstilos {
+
+    }
+    `,
+  },
+  {
+    parrafo: (
+      <>
+        Para aplicar estilos a estos selectores, utilizamos el bloque de
+        declaración. Estos estilos contienen una o más propiedades junto con un
+        valor asignado a cada propiedad, y cada declaración se separa por un
+        punto y coma (;).
+      </>
+    ),
+  },
+  {
+    titulo: {
+      h3: 'Propiedades Básicas',
+    },
+    parrafo: (
+      <>
+        Existen algunas propiedades básicas en CSS que es importante conocer:
+        <br />
+        <br />
+        <ul>
+          <li>
+            <strong>Color de Texto</strong>: Puedes cambiar el color del texto
+            utilizando la propiedad
+            <strong>color</strong>. Puedes especificar un valor de color
+            utilizando nombres en inglés, códigos hexadecimales o valores RGB.
+          </li>
+        </ul>
+      </>
+    ),
+    codigo: `
+    p {
+      color: red; /* Nombre en inglés */
+      color: #FF0000; /* Hexadecimal */
+      color: rgb(255, 0, 0); /* RGB */
+    }
+    `,
+  },
+  {
+    parrafo: (
+      <>
+        <ul>
+          <li>
+            <strong>Tamaño de la fuente</strong>: Para ajustar el tamaño de la
+            fuente, utiliza la propiedad <strong>font-size</strong> con unidades
+            como píxeles (<strong>px</strong>) y otras que se explicarán más
+            adelante.
+          </li>
+        </ul>
+      </>
+    ),
+    codigo: `
+    p {
+      font-size: 20px;
+    }
+    `,
+  },
+  {
+    parrafo: (
+      <>
+        <ul>
+          <li>
+            <strong>Fondo</strong>: La propiedad <strong>background</strong>se
+            usa para especificar múltiples valores. Puedes establecer el color
+            de fondo de la misma manera que el color del texto, utilizando
+            valores hexadecimales, RGB o nombres en inglés. Si deseas utilizar
+            una imagen de fondo, utiliza el valor <strong>url()</strong> y
+            proporciona la ruta donde se encuentra la imagen. Esta propiedad se
+            utiliza comúnmente con elementos como div, section o article.
+          </li>
+        </ul>
+      </>
+    ),
+    codigo: `
+    section {
+      background: grey url('/rutaImagen');
+    }
+    `,
+  },
+  {
+    parrafo: (
+      <>
+        <ul>
+          <li>
+            <strong>Tamaño del Elemento</strong>: Utiliza las propiedades
+            <strong>width</strong> y <strong>height</strong> para especificar el
+            ancho y la altura de un elemento, respectivamente. Al igual que el
+            tamaño de la fuente, puedes expresar su valor en píxeles (px) Esto
+            se utiliza frecuentemente con elementos como div, section o article.
+          </li>
+        </ul>
+      </>
+    ),
+    codigo: `
+    section {
+      width: 50px;
+      height: 40px;
+    }
+    `,
+  },
+  {
+    parrafo: (
+      <>
+        <ul>
+          <li>
+            <strong>Posición del Elemento</strong>: La propiedad{' '}
+            <strong>position</strong> se utiliza para mover un elemento. Puede
+            tomar cinco valores diferentes y debe ir acompañada de las
+            propiedades <strong>top</strong>, <strong>right</strong>,{' '}
+            <strong>bottom</strong> y <strong>left</strong> para especificar en
+            qué dirección deseas moverlo. Las mismas unidades en píxeles (px)
+            que se han mencionado anteriormente se aplican aquí.
+            <br />
+            Los valores que puede tomar <strong>position</strong> son:
+            <ul>
+              <br />
+
+              <li>
+                <strong>static</strong>: Es el valor que tiene por defecto y las
+                propiedades <strong>top</strong>, <strong>right</strong>,{' '}
+                <strong>bottom</strong> y <strong>left</strong> no tienen
+                efecto.
+              </li>
+              <br />
+              <li>
+                <strong>relative</strong>: El elemento se coloca normalmente y no
+                afecta la posición de otros elementos, incluso si lo mueves.
+              </li>
+              <br />
+              <li>
+                <strong>absolute</strong>: El elemento se coloca fuera del flujo
+                normal y se posiciona con respecto a su contenedor más cercano.
+              </li>
+              <br />
+              <li>
+                <strong>fixed</strong>: El elemento se coloca fuera del flujo
+                normal y se posiciona con respecto a la ventana del navegador.
+                Permanece en el mismo lugar incluso cuando se desplaza la
+                página.
+              </li>
+              <br />
+              <li>
+                <strong>sticky</strong>: El elemento se coloca normalmente y
+                luego se ‘pega’ a una posición específica mientras se desplaza
+                por la página web.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <br />
+        <br />
+        Recomiendo visitar{' '}
+        <strong>
+          <a
+            style={{ color: '#D3D4D6', textDecoration: 'underline' }}
+            href='https://www.freecodecamp.org/news/learn-the-basics-the-css-position-property/'
+            target='_blank'
+          >
+            https://www.freecodecamp.org/news/learn-the-basics-the-css-position-property/
+          </a>
+        </strong>
+        {' '}para ver ejemplos de los diferentes tipos de position.
+      </>
+    ),
+  },
 ]
